@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { HeaderOne } from '@/components'
-import "@/styles/sass/index.scss"
+import '@/styles/sass/index.scss'
+import { ThemeOne } from '@/layout'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +16,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <HeaderOne />
-        {children}
+        <ThemeOne>
+          <HeaderOne />
+          {children}
+        </ThemeOne>
       </body>
     </html>
   )
