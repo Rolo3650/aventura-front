@@ -1,0 +1,15 @@
+.header {
+    
+    &.header-one {
+        
+        & .logo {
+
+            position: relative;
+            top: 25px;
+            width: 150px;
+
+        }
+
+    }
+    
+}

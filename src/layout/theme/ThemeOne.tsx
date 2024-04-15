@@ -2,7 +2,21 @@
 import { ThemeProvider, createTheme } from '@mui/material'
 
 const theme = createTheme({
-  palette: {}
+  typography: {
+    fontFamily: 'Raleway, Arial'
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        @font-face {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-display: swap;
+          font-weight: 400;
+        }
+      `
+    }
+  }
 })
 
 const ThemeOne = ({
