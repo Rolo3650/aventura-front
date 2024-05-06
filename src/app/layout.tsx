@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { HeaderOne } from '@/components'
 import '@/styles/sass/index.scss'
 import { ThemeOne } from '@/layout'
+import 'react-photo-view/dist/react-photo-view.css';
+import { FooterOne } from '@/components/modules/footer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,6 +21,7 @@ export default function RootLayout({
         <ThemeOne>
           <HeaderOne />
           {children}
+          <FooterOne />
         </ThemeOne>
       </body>
     </html>

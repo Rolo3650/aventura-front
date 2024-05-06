@@ -2,6 +2,11 @@
 import { ThemeProvider, createTheme } from '@mui/material'
 
 const theme = createTheme({
+  palette: {
+    secondary: {
+      main: '#FD542A'
+    }
+  },
   typography: {
     fontFamily: 'Raleway, Arial'
   },

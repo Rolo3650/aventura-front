@@ -17,9 +17,14 @@ const navigationConfig: NavigationItem[] = [
         route: '/eventos-escolares/paseos'
       },
       {
-        label: 'Campamentos',
+        label: 'Campamentos aventura',
         breackpoint: 'md',
-        route: '/campamentos'
+        route: '/campamentos/campamentos-aventura'
+      },
+      {
+        label: 'Campamentos Externos',
+        breackpoint: 'md',
+        route: '/campamentos/campamentos-externos'
       },
       {
         label: 'Renta de Autobuses',
