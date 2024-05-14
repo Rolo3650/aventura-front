@@ -1,4 +1,5 @@
 'use client'
+import { MenuTwo } from '@/components/inputs'
 import { navigationConfig } from '@/core'
 import { Box, Breakpoint, Button, ButtonProps, Typography, styled } from '@mui/material'
 import { useRouter } from 'next/navigation'
@@ -8,11 +9,11 @@ interface ButtonStyled extends ButtonProps {
   breakpoint: Breakpoint
 }
 
-const ButtonStyled = styled(Button)<ButtonStyled>(({}) => ({
+const ButtonStyled = styled(Button)<ButtonStyled>(({ }) => ({
   height: '50px',
   width: '100%',
   color: 'white',
-  borderBottom: '2px solid white',
+  borderBottom: '1px solid white',
   borderRadius: '0'
 }))
 
@@ -39,17 +40,7 @@ const NavbarPhoneOne = () => {
         } else {
           return (
             <>
-              <ButtonStyled
-                key={nav.route}
-                breakpoint={nav.breackpoint}
-                onClick={() => {
-                  router.push(nav.route)
-                }}
-              >
-                <Typography color={'inherit'} fontWeight={'500'}>
-                  {nav.label}
-                </Typography>
-              </ButtonStyled>
+              <MenuTwo item={nav} />
             </>
           )
         }

@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 export default function Loading() {
-  return <>Hola 2</>
+  return <Box width={'100&'} height={'80vh'}></Box>
 }

@@ -17,7 +17,7 @@ const navigationConfig: NavigationItem[] = [
         route: '/eventos-escolares/paseos'
       },
       {
-        label: 'Campamentos aventura',
+        label: 'Campamentos Aventura',
         breackpoint: 'md',
         route: '/campamentos/campamentos-aventura'
       },
@@ -32,9 +32,9 @@ const navigationConfig: NavigationItem[] = [
         route: '/eventos-escolares/renta-de-autobuses'
       },
       {
-        label: 'Festividades temáticas',
+        label: 'Fiestas temáticas',
         breackpoint: 'md',
-        route: '/eventos-escolares/festividades-temáticas'
+        route: '/eventos-escolares/fiestas-tematicas'
       }
     ]
   },
@@ -44,7 +44,7 @@ const navigationConfig: NavigationItem[] = [
     route: '/campamentos',
     items: [
       {
-        label: 'Campamentos aventura',
+        label: 'Campamentos Aventura',
         breackpoint: 'md',
         route: '/campamentos/campamentos-aventura'
       },

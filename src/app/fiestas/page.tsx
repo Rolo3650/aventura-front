@@ -11,40 +11,57 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
   [theme.breakpoints.down('md')]: {
     paddingLeft: '30px',
     paddingRight: '30px'
-  }
+  },
 }))
 
 export default function Parties() {
   const imgs: Img[] = [
-    // {
-    //   alt: 'img-1',
-    //   src: '/svgs/banners/img-1.svg'
-    // },
-    // {
-    //   alt: 'img-2',
-    //   src: '/svgs/banners/img-2.svg'
-    // },
-    // {
-    //   alt: 'img-3',
-    //   src: '/svgs/banners/img-3.svg'
-    // },
-    // {
-    //   alt: 'img-4',
-    //   src: '/svgs/banners/img-4.svg'
-    // },
-    // {
-    //   alt: 'img-5',
-    //   src: '/svgs/banners/img-5.svg'
-    // },
+    {
+      alt: 'img-1',
+      src: '/imgs/banners/fiestas/img_1.jpg'
+    },
+    {
+      alt: 'img-2',
+      src: '/imgs/banners/fiestas/img_2.jpeg'
+    },
+    {
+      alt: 'img-3',
+      src: '/imgs/banners/fiestas/img_3.jpeg'
+    },
+    {
+      alt: 'img-4',
+      src: '/imgs/banners/fiestas/img_4.jpg'
+    },
+    {
+      alt: 'img-5',
+      src: '/imgs/banners/fiestas/img_5.jpg'
+    },
     {
       alt: 'img-6',
-      src: '/svgs/banners/img-6.svg'
+      src: '/imgs/banners/fiestas/img_6.jpg'
     },
     {
       alt: 'img-7',
-      src: '/svgs/banners/img-7.svg'
-    }
+      src: '/imgs/banners/fiestas/img_7.jpg'
+    },
+    {
+      alt: 'img-8',
+      src: '/imgs/banners/fiestas/img_8.jpg'
+    },
+    {
+      alt: 'img-9',
+      src: '/imgs/banners/fiestas/img_9.jpg'
+    },
+    {
+      alt: 'img-10',
+      src: '/imgs/banners/fiestas/img_10.jpg'
+    },
+    {
+      alt: 'img-11',
+      src: '/imgs/banners/fiestas/img_11.png'
+    },
   ]
+
 
   return (
     <main>

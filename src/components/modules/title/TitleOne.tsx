@@ -4,10 +4,10 @@ import React from 'react'
 
 const BoxHeader = styled(Box)<BoxProps>(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
-    height: '100px'
+    height: '150px'
   },
   [theme.breakpoints.down('md')]: {
-    height: '100px'
+    height: '150px'
   },
   width: '100%',
 
