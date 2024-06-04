@@ -1,5 +1,5 @@
 'use client'
-import { CarouselOne, ServicesOne, TitleOne } from '@/components'
+import { CarouselOne, MemoriesOne, ServicesOne, TitleOne } from '@/components'
 import { Img } from '@/core'
 import { Box, Typography, BoxProps, styled } from '@mui/material'
 
@@ -11,7 +11,7 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
   [theme.breakpoints.down('md')]: {
     paddingLeft: '30px',
     paddingRight: '30px'
-  },
+  }
 }))
 
 export default function Parties() {
@@ -59,14 +59,44 @@ export default function Parties() {
     {
       alt: 'img-11',
       src: '/imgs/banners/fiestas/img_11.png'
-    },
+    }
   ]
 
+  const imgs2: Img[] = [
+    {
+      alt: 'img-1',
+      src: '/imgs/recuerdos/fiestas/img_1.jpg'
+    },
+    {
+      alt: 'img-2',
+      src: '/imgs/recuerdos/fiestas/img_2.jpg'
+    },
+    {
+      alt: 'img-3',
+      src: '/imgs/recuerdos/fiestas/img_3.jpg'
+    },
+    {
+      alt: 'img-4',
+      src: '/imgs/recuerdos/fiestas/img_4.jpg'
+    },
+    {
+      alt: 'img-5',
+      src: '/imgs/recuerdos/fiestas/img_5.jpg'
+    },
+    {
+      alt: 'img-6',
+      src: '/imgs/recuerdos/fiestas/img_6.jpg'
+    },
+    {
+      alt: 'img-7',
+      src: '/imgs/recuerdos/fiestas/img_7.jpg'
+    }
+  ]
 
   return (
     <main>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselOne imgs={imgs} />
+        <CarouselOne imgs={imgs2} />
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -76,13 +106,17 @@ export default function Parties() {
       </Box>
       <TitleOne text='Fiestas' />
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <Typography variant='body1' sx={{ textAlign: 'justify' }}>
+        <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
           <br />
           <br />
-          ¡Bienvenido a Aventura en tu Escuela! Somos una empresa comprometida con la diversión y el aprendizaje de
-          niños y jóvenes a través de nuestras emocionantes fiestas y eventos escolares.
+          Ya sea que estés buscando organizar una celebración especial como: ejemplos día niño, estudiante, graduación,
+          Halloween, eventos de temporada
           <br />
           <br />
+          ¡Prepárate para vivir una experiencia inolvidable llena de diversión, risas y momentos memorables con Aventura
+          en tu Escuela!
+          <br />
+          {/* <br />
           Nuestros servicios de fiestas están diseñados para ofrecer una experiencia única y memorable para los
           estudiantes de tu escuela. Con una combinación perfecta de actividades recreativas, juegos emocionantes y
           desafíos divertidos, nos aseguramos de que cada evento sea una aventura inolvidable.
@@ -92,13 +126,24 @@ export default function Parties() {
           mientras fomentan valores importantes como el trabajo en equipo, la autoestima y la independencia. Además,
           nuestro dedicado staff está comprometido con la seguridad de todos los participantes, garantizando que cada
           momento sea seguro y lleno de diversión.
-          <br />
-          <br />
-          Con Aventura en tu Escuela, puedes estar seguro de que tu evento escolar será todo un éxito. ¡Déjanos llevar
-          la emoción y la aventura a tu escuela y crea recuerdos inolvidables para tus estudiantes!
+          <br /> */}
           <br />
           <br />
         </Typography>
+      </BoxStyled>
+      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
+        <TitleOne text='Paquetes' />
+        <br />
+        <CarouselOne imgs={imgs} />
+        <br />
+        {/* <BoxStyled paddingLeft={'60px'}>
+          <Typography variant='h2' fontWeight={600}>
+            Últimas Noticias
+          </Typography>
+        </BoxStyled> */}
+      </Box>
+      <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
+        <MemoriesOne title='Recuerdos' imgs={imgs2} />
       </BoxStyled>
       <ServicesOne />
     </main>

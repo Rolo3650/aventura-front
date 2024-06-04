@@ -63,9 +63,9 @@ const ServicesOne = () => {
           </CardContent>
         </CardStyled>
         <CardStyled onClick={() => {
-          router.push('/eventos-escolares/fiestas-tematicas')
+          router.push('/eventos-escolares/eventos-tematicos')
         }}>
-          <CardHeader title='Fiestas Temáticas' />
+          <CardHeader title='Eventos Temáticos' />
           <CardContent>
             <img src={'/imgs/banners/fiestas_tematicas/img_1.jpg'} alt={'img-1'} className='w-100' />
           </CardContent>

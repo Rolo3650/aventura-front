@@ -11,7 +11,7 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
   [theme.breakpoints.down('md')]: {
     paddingLeft: '30px',
     paddingRight: '30px'
-  },
+  }
 }))
 
 export default function Parties() {
@@ -39,9 +39,8 @@ export default function Parties() {
     {
       alt: 'img-6',
       src: '/imgs/banners/campamentos/img_6.jpg'
-    },
+    }
   ]
-
 
   return (
     <main>
@@ -56,22 +55,42 @@ export default function Parties() {
       </Box>
       <TitleOne text='Campamentos Externos' />
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <Typography variant='body1' sx={{ textAlign: 'justify' }} paddingY={4}>
-          Sumérgete en la naturaleza y vive una experiencia única en nuestros campamentos en las sedes CDI y Eco Alberto. En Aventura en tu Escuela, creemos en la importancia de conectar con el entorno natural y fomentar el amor por el medio ambiente, y nuestros campamentos son la manera perfecta de hacerlo.
+        <Typography variant='body1' sx={{ textAlign: 'justify' }} paddingY={4} fontWeight={'bold'}>
+          Sumérgete en la naturaleza y vive una experiencia única en nuestros campamentos en las sedes CDI y Eco
+          Alberto. En Aventura en tu Escuela, creemos en la importancia de conectar con el entorno natural y fomentar el
+          amor por el medio ambiente, y nuestros campamentos son la manera perfecta de hacerlo.
           <br />
           <br />
-          Ubicados en entornos naturales impresionantes, nuestras sedes CDI y Eco Alberto ofrecen el escenario perfecto para que los niños y jóvenes disfruten de actividades al aire libre, aprendan sobre la biodiversidad local y se sumerjan en la aventura en un entorno seguro y supervisado.
+          Ubicados en entornos naturales impresionantes, nuestras sedes CDI y Eco Alberto ofrecen el escenario perfecto
+          para que los niños y jóvenes disfruten de actividades al aire libre, aprendan sobre la biodiversidad local y
+          se sumerjan en la aventura en un entorno seguro y supervisado.
           <br />
           <br />
-          Nuestros campamentos incluyen una amplia gama de actividades emocionantes, desde senderismo y observación de aves hasta talleres de arte y actividades de aventura. Con la guía de nuestro equipo de expertos en educación ambiental, los participantes tendrán la oportunidad de explorar, descubrir y aprender de una manera divertida e interactiva.
+          Sedes:
           <br />
           <br />
-          Además, nuestras sedes están equipadas con todas las comodidades necesarias para garantizar una estadía cómoda y segura, incluyendo alojamiento, alimentación balanceada y atención médica disponible en todo momento.
+          <li>CDI (Tepoz)</li>
+          <li>Finca Villa Victoria (EDO MEX)</li>
+          <li>Oaxtepec Dorados</li>
+          <li>Eco Alberto</li>
+          <li>Abekany Camp</li>
           <br />
           <br />
-          En Aventura en tu Escuela, estamos comprometidos a proporcionar experiencias transformadoras que inspiren a los participantes a apreciar y cuidar nuestro precioso entorno natural. Únete a nosotros en nuestros campamentos en las sedes CDI y Eco Alberto y descubre el poder de la naturaleza para educar, inspirar y conectar.
+          Incluye:
           <br />
           <br />
+          <li>Alimentos (desayuno, comida y cena) 4 o 7 alimentos abundantes</li>
+          <li>Tranporte</li>
+          <li>Hospedaje</li>
+          <li>Fogata</li>
+          <li>Playera</li>
+          <li>Noche disco</li>
+          <li>Actividades Acuáticas</li>
+          <li>Clausura con participación de papás</li>
+          <li>Staff capacitado, 1 explorador por cada 15 alumnos</li>
+          <li>Actividades recreativas</li>
+          <li>Seguro contra accidentes (hasta $ 20,000.00)</li>
+          <li>Servicio medico</li>
         </Typography>
       </BoxStyled>
       <ServicesOne />

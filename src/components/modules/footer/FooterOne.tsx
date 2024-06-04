@@ -50,7 +50,7 @@ const FooterOne = () => {
             href='/docs/Aviso.pdf'
             target='_blank'
           >
-            Aviso de Privaciada
+            Aviso de Privacidad
           </Link>
           {/* <iframe
           width='600'

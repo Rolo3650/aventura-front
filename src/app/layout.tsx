@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import { HeaderOne } from '@/components'
 import '@/styles/sass/index.scss'
 import { ThemeOne } from '@/layout'
-import 'react-photo-view/dist/react-photo-view.css';
-import { FooterOne } from '@/components/modules/footer';
+import 'react-photo-view/dist/react-photo-view.css'
+import { FooterOne } from '@/components/modules/footer'
+import { Box } from '@mui/material'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -23,6 +24,27 @@ export default function RootLayout({
           {children}
           <FooterOne />
         </ThemeOne>
+        <Box
+          sx={{
+            '& img': {
+              position: 'fixed',
+              bottom: '20px',
+              right: '20px',
+              width: '60px',
+              height: '60px',
+              color: 'white',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              borderRadius: '50%',
+              cursor: 'pointer',
+              boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)',
+              transition: 'transform 0.3s ease'
+            }
+          }}
+        >
+          <img src='https://img.icons8.com/?size=100&id=16713&format=png&color=000000' alt='whats-icon' />
+        </Box>
       </body>
     </html>
   )
