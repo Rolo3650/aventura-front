@@ -1,6 +1,6 @@
 import { NavigationItem } from '@/core'
 
-const navigationConfig: NavigationItem[] = [
+const navigationConfigQueretaro: NavigationItem[] = [
   {
     label: 'Fiestas',
     breackpoint: 'md',
@@ -57,4 +57,4 @@ const navigationConfig: NavigationItem[] = [
   }
 ]
 
-export { navigationConfig }
+export { navigationConfigQueretaro }

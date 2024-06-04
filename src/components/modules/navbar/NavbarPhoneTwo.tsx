@@ -1,6 +1,6 @@
 'use client'
 import { MenuTwo } from '@/components/inputs'
-import { navigationConfig } from '@/core'
+import { navigationConfigQueretaro } from '@/core'
 import { Box, Breakpoint, Button, ButtonProps, Typography, styled } from '@mui/material'
 import { useRouter } from 'next/navigation'
 import React from 'react'
@@ -9,7 +9,7 @@ interface ButtonStyled extends ButtonProps {
   breakpoint: Breakpoint
 }
 
-const ButtonStyled = styled(Button)<ButtonStyled>(({ }) => ({
+const ButtonStyled = styled(Button)<ButtonStyled>(({}) => ({
   height: '50px',
   width: '100%',
   color: 'white',
@@ -22,7 +22,7 @@ const NavbarPhoneTwo = () => {
 
   return (
     <Box width={'250px'}>
-      {navigationConfig.map(nav => {
+      {navigationConfigQueretaro.map(nav => {
         if (!nav.items) {
           return (
             <ButtonStyled

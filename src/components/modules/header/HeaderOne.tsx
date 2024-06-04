@@ -1,9 +1,9 @@
 'use client'
 import { Box, BoxProps, Drawer, Grid, GridProps, IconButton, IconButtonProps, styled } from '@mui/material'
 import React from 'react'
-import { NavbarDesktopOne, NavbarPhoneOne } from '@/components'
+import { NavbarDesktopOne, NavbarDesktopTwo, NavbarPhoneOne, NavbarPhoneTwo } from '@/components'
 import MenuIcon from '@mui/icons-material/Menu'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 const BoxHeader = styled(Box)<BoxProps>(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
@@ -63,6 +63,7 @@ const MenuButton = styled(IconButton)<IconButtonProps>(({}) => ({
 const HeaderOne = () => {
   const router = useRouter()
   const [open, setOpen] = React.useState(false)
+  const pathname = usePathname()
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen)
@@ -94,7 +95,8 @@ const HeaderOne = () => {
           </Grid>
           <GridDesktop item md={8}>
             <BoxItem>
-              <NavbarDesktopOne />
+              {!pathname.includes('Queretaro') && <NavbarDesktopOne />}
+              {pathname.includes('Queretaro') && <NavbarDesktopTwo />}
             </BoxItem>
           </GridDesktop>
         </Grid>
@@ -109,7 +111,8 @@ const HeaderOne = () => {
         open={open}
         onClose={toggleDrawer(false)}
       >
-        <NavbarPhoneOne />
+        {!pathname.includes('Queretaro') && <NavbarPhoneOne />}
+        {pathname.includes('Queretaro') && <NavbarPhoneTwo />}
       </Drawer>
     </BoxHeader>
   )
