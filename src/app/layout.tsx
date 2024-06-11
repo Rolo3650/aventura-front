@@ -30,20 +30,43 @@ export default function RootLayout({
               position: 'fixed',
               bottom: '20px',
               right: '20px',
-              width: '60px',
-              height: '60px',
+              width: '70px',
+              height: '70px',
               color: 'white',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
               borderRadius: '50%',
               cursor: 'pointer',
-              boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)',
               transition: 'transform 0.3s ease'
             }
           }}
         >
-          <img src='https://img.icons8.com/?size=100&id=16713&format=png&color=000000' alt='whats-icon' />
+          <a href="https://api.whatsapp.com/send/?phone=5538060138&text=Buenas tardes, estoy interesado&type=phone_number&app_absent=0" target='_blank'>
+            <img src='https://img.icons8.com/?size=100&id=16713&format=png&color=000000' alt='whats-icon' />
+          </a>
+        </Box>
+        <Box
+          sx={{
+            '& img': {
+              position: 'fixed',
+              bottom: '20px',
+              left: '20px',
+              width: '70px',
+              height: '70px',
+              color: 'white',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              borderRadius: '50%',
+              cursor: 'pointer',
+              transition: 'transform 0.3s ease'
+            }
+          }}
+        >
+          <a href="https://www.facebook.com/AventuraentuEscuela?mibextid=LQQJ4d" target='_blank'>
+            <img src='https://img.icons8.com/?size=100&id=118497&format=png&color=000000' alt='whats-icon' />
+          </a>
         </Box>
       </body>
     </html>

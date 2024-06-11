@@ -1,5 +1,6 @@
 'use client'
-import { ServicesOne, TitleOne } from '@/components'
+import { CarouselOne, ServicesOne, TitleOne } from '@/components'
+import { Img } from '@/core'
 import { Box, Typography, BoxProps, styled } from '@mui/material'
 
 const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
@@ -14,10 +15,44 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
 }))
 
 export default function Parties() {
-
+  const imgs: Img[] = [
+    {
+      alt: 'img-1',
+      src: '/imgs/recuerdos/staff/img_1.jpg'
+    },
+    {
+      alt: 'img-2',
+      src: '/imgs/recuerdos/staff/img_2.jpg'
+    },
+    {
+      alt: 'img-3',
+      src: '/imgs/recuerdos/staff/img_3.jpg'
+    },
+    {
+      alt: 'img-4',
+      src: '/imgs/recuerdos/staff/img_4.jpg'
+    },
+    {
+      alt: 'img-5',
+      src: '/imgs/recuerdos/staff/img_5.jpg'
+    },
+    {
+      alt: 'img-6',
+      src: '/imgs/recuerdos/staff/img_6.jpg'
+    },
+  ]
 
   return (
     <main>
+      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
+        <CarouselOne imgs={imgs} />
+        <br />
+        {/* <BoxStyled paddingLeft={'60px'}>
+          <Typography variant='h2' fontWeight={600}>
+            Últimas Noticias
+          </Typography>
+        </BoxStyled> */}
+      </Box>
       <TitleOne text='Nosotros' />
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
         <Typography variant='body1' sx={{ textAlign: 'justify' }}>

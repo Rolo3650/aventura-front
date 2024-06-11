@@ -1,5 +1,5 @@
 'use client'
-import { CarouselOne, ServicesOne, TitleOne } from '@/components'
+import { CarouselOne, MemoriesOne, ServicesOne, TitleOne } from '@/components'
 import { Img } from '@/core'
 import { Box, Typography, BoxProps, styled } from '@mui/material'
 
@@ -42,10 +42,33 @@ export default function Parties() {
     }
   ]
 
+  const imgs2: Img[] = [
+    {
+      alt: 'img-1',
+      src: '/imgs/recuerdos/campamentos/img_1.jpg'
+    },
+    {
+      alt: 'img-2',
+      src: '/imgs/recuerdos/campamentos/img_2.jpg'
+    },
+    {
+      alt: 'img-3',
+      src: '/imgs/recuerdos/campamentos/img_3.jpg'
+    },
+    {
+      alt: 'img-4',
+      src: '/imgs/recuerdos/campamentos/img_4.jpg'
+    },
+    {
+      alt: 'img-5',
+      src: '/imgs/recuerdos/campamentos/img_5.jpg'
+    },
+  ]
+
   return (
     <main>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselOne imgs={imgs} />
+        <CarouselOne imgs={imgs2} />
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -92,6 +115,20 @@ export default function Parties() {
           <li>Seguro contra accidentes (hasta $ 20,000.00)</li>
           <li>Servicio medico</li>
         </Typography>
+      </BoxStyled>
+      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
+        <TitleOne text='Paquetes' />
+        <br />
+        <CarouselOne imgs={imgs} />
+        <br />
+        {/* <BoxStyled paddingLeft={'60px'}>
+          <Typography variant='h2' fontWeight={600}>
+            Últimas Noticias
+          </Typography>
+        </BoxStyled> */}
+      </Box>
+      <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
+        <MemoriesOne title='Recuerdos' imgs={imgs2} />
       </BoxStyled>
       <ServicesOne />
     </main>

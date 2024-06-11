@@ -1,5 +1,5 @@
 'use client'
-import { CarouselOne, ServicesOne, TitleOne } from '@/components'
+import { CarouselOne, MemoriesOne, ServicesOne, TitleOne } from '@/components'
 import { Img } from '@/core'
 import { Box, Typography, BoxProps, styled } from '@mui/material'
 
@@ -26,10 +26,85 @@ export default function Parties() {
     }
   ]
 
+  const imgs2: Img[] = [
+    {
+      alt: 'img-1',
+      src: '/imgs/recuerdos/paseos/img_1.jpg'
+    },
+    {
+      alt: 'img-2',
+      src: '/imgs/recuerdos/paseos/img_2.jpg'
+    },
+    {
+      alt: 'img-3',
+      src: '/imgs/recuerdos/paseos/img_3.jpg'
+    },
+    {
+      alt: 'img-4',
+      src: '/imgs/recuerdos/paseos/img_4.jpg'
+    },
+    {
+      alt: 'img-5',
+      src: '/imgs/recuerdos/paseos/img_5.jpg'
+    },
+    {
+      alt: 'img-6',
+      src: '/imgs/recuerdos/paseos/img_6.jpg'
+    },
+    {
+      alt: 'img-7',
+      src: '/imgs/recuerdos/paseos/img_7.jpg'
+    },
+    {
+      alt: 'img-8',
+      src: '/imgs/recuerdos/paseos/img_8.jpg'
+    },
+    {
+      alt: 'img-9',
+      src: '/imgs/recuerdos/paseos/img_9.jpg'
+    },
+    {
+      alt: 'img-10',
+      src: '/imgs/recuerdos/paseos/img_10.jpg'
+    },
+    {
+      alt: 'img-11',
+      src: '/imgs/recuerdos/paseos/img_11.jpg'
+    },
+    {
+      alt: 'img-12',
+      src: '/imgs/recuerdos/paseos/img_12.jpg'
+    },
+    {
+      alt: 'img-13',
+      src: '/imgs/recuerdos/paseos/img_13.jpg'
+    },
+    {
+      alt: 'img-14',
+      src: '/imgs/recuerdos/paseos/img_14.jpg'
+    },
+    {
+      alt: 'img-15',
+      src: '/imgs/recuerdos/paseos/img_15.jpg'
+    },
+    {
+      alt: 'img-16',
+      src: '/imgs/recuerdos/paseos/img_16.jpg'
+    },
+    {
+      alt: 'img-17',
+      src: '/imgs/recuerdos/paseos/img_17.jpg'
+    },
+    {
+      alt: 'img-18',
+      src: '/imgs/recuerdos/paseos/img_18.jpg'
+    },
+  ]
+
   return (
     <main>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselOne imgs={imgs} />
+        <CarouselOne imgs={imgs2} />
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -67,6 +142,20 @@ export default function Parties() {
           <li>Seguro contra accidentes (hasta $ 20,000.00)</li>
           <li>Servicio medico por botiquín</li>
         </Typography>
+      </BoxStyled>
+      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
+        <TitleOne text='Paquetes' />
+        <br />
+        <CarouselOne imgs={imgs} />
+        <br />
+        {/* <BoxStyled paddingLeft={'60px'}>
+          <Typography variant='h2' fontWeight={600}>
+            Últimas Noticias
+          </Typography>
+        </BoxStyled> */}
+      </Box>
+      <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
+        <MemoriesOne title='Recuerdos' imgs={imgs2} />
       </BoxStyled>
       <ServicesOne />
     </main>
