@@ -24,10 +24,11 @@ export default function Parties() {
       alt: 'img-2',
       src: '/imgs/banners/fiestas_tematicas/img_2.jpeg'
     },
-    {
-      alt: 'img-3',
-      src: '/imgs/banners/fiestas_tematicas/img_3.jpg'
-    },
+    
+    // {
+    //   alt: 'img-3',
+    //   src: '/imgs/banners/fiestas_tematicas/img_3.jpg'
+    // },
     {
       alt: 'img-4',
       src: '/imgs/banners/fiestas_tematicas/img_4.jpg'
@@ -144,7 +145,7 @@ export default function Parties() {
       <BoxStyled maxWidth={'1200px'} marginX={'auto'} paddingY={4}>
         <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
           ¿Estás listo para llevar la diversión al siguiente nivel en tu escuela? En Aventura en tu Escuela, ofrecemos
-          emocionantes eventos temáticos que transformarán tu escuela en un mundo de aventuras y fantasía.
+          emocionantes eventos temáticos que transformarán tu escuela en un mundo de aventuras y diversión.
           {/* <br />
                     <br />
                     Nuestras eventos temáticos están diseñadas para brindar una experiencia única y emocionante para los estudiantes, llenando el ambiente escolar con alegría, creatividad y emoción. Desde fiestas de disfraces hasta eventos inspirados en tus películas o libros favoritos, ofrecemos una amplia variedad de temas para que elijas el que mejor se adapte a los intereses de tu escuela.
@@ -155,6 +156,9 @@ export default function Parties() {
           <br />
           Con Aventura en tu Escuela, puedes estar seguro de que tu evento escolar será todo un éxito. ¡Déjanos llevar
           la emoción y la aventura a tu escuela y crea recuerdos inolvidables para tus estudiantes!
+          <br />
+          <br />
+          Contamos con eventos para el Día del Niño, Día del Estudiante, San Valentín, Mañanita Mexicana, Posadas, Halloween, Día del Padre, Día de la Madre y/o eventos de integración.
           <br />
           <br />
         </Typography>

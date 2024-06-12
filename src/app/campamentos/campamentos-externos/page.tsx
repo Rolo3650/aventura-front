@@ -79,24 +79,26 @@ export default function Parties() {
       <TitleOne text='Campamentos Externos' />
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
         <Typography variant='body1' sx={{ textAlign: 'justify' }} paddingY={4} fontWeight={'bold'}>
-          Sumérgete en la naturaleza y vive una experiencia única en nuestros campamentos en las sedes CDI y Eco
-          Alberto. En Aventura en tu Escuela, creemos en la importancia de conectar con el entorno natural y fomentar el
+          Sumérgete en la naturaleza y vive una experiencia única en nuestros campamentos en nuestras diferentes sedes. En Aventura en tu Escuela, creemos en la importancia de conectar con el entorno natural y fomentar el
           amor por el medio ambiente, y nuestros campamentos son la manera perfecta de hacerlo.
           <br />
           <br />
-          Ubicados en entornos naturales impresionantes, nuestras sedes CDI y Eco Alberto ofrecen el escenario perfecto
-          para que los niños y jóvenes disfruten de actividades al aire libre, aprendan sobre la biodiversidad local y
-          se sumerjan en la aventura en un entorno seguro y supervisado.
+          Ubicados en entornos naturales impresionantes, nuestras sedes ofrecen el escenario perfecto
+          para que los niños y jóvenes disfruten de actividades al aire libre, aprendan sobre la sana covivencia y
+          se sumerjan en la aventura en un entorno seguro y fascinante.
           <br />
           <br />
           Sedes:
           <br />
           <br />
-          <li>CDI (Tepoz)</li>
+          <li>Rancho CDI - TPOZ (Tepotzotlan)</li>
           <li>Finca Villa Victoria (EDO MEX)</li>
-          <li>Oaxtepec Dorados</li>
-          <li>Eco Alberto</li>
-          <li>Abekany Camp</li>
+          <li>Club Dorados (Oaxtepec)</li>
+          <li>Eco Alberto (Hidalgo)</li>
+          <li>Rancho Abekany (Tepotzotlan)</li>
+          <li>Rancho Diego (Morelos)</li>
+          <li>Malinalco Camper Club (EDO MEX)</li>
+          <li>Rancho Aventura (EDO MEX)</li>
           <br />
           <br />
           Incluye:
@@ -107,13 +109,15 @@ export default function Parties() {
           <li>Hospedaje</li>
           <li>Fogata</li>
           <li>Playera</li>
+          <li>Alberca</li>
           <li>Noche disco</li>
-          <li>Actividades Acuáticas</li>
-          <li>Clausura con participación de papás</li>
-          <li>Staff capacitado, 1 explorador por cada 15 alumnos</li>
+          <li>Lluvia de Estrellas</li>
+          <li>Staff capacitado, 1 explorador por cada 10 alumnos</li>
           <li>Actividades recreativas</li>
-          <li>Seguro contra accidentes (hasta $ 20,000.00)</li>
-          <li>Servicio medico</li>
+          <li>Seguro contra accidentes (hasta $ 100,000.00)</li>
+          <li>Servicio médico</li>
+          <li>Galería de fotos mediante el grupo WhatsApp</li>
+          <li>Programa de actividades, recreativas y campismo</li>
         </Typography>
       </BoxStyled>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>

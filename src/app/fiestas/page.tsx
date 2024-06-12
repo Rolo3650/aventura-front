@@ -109,12 +109,14 @@ export default function Parties() {
         <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
           <br />
           <br />
-          Ya sea que estés buscando organizar una celebración especial como: ejemplos día niño, estudiante, graduación,
-          Halloween, eventos de temporada
+          ¿Quieres una fiesta diferente y única? 🥳
           <br />
           <br />
-          ¡Prepárate para vivir una experiencia inolvidable llena de diversión, risas y momentos memorables con Aventura
-          en tu Escuela!
+          Te ofrecemos nuestras  FIESTAS DE AVENTURA en las que llevamos toda la diversión y la AVENTURA hasta ti.  🏡🏘
+          <br />
+          <br />
+          Contamos con paquetes desde 5 niños y muchísimas actividades que harán que pases ¡un día lleno de diversión! 🌈🥳🤩  ¡Tenemos fiestas temáticas!
+          Mándanos un inbox si quieres mas información.... 📲
           <br />
           {/* <br />
           Nuestros servicios de fiestas están diseñados para ofrecer una experiencia única y memorable para los

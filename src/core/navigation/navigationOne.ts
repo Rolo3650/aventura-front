@@ -29,6 +29,23 @@ const navigationConfig: NavigationItem[] = [
     ]
   },
   {
+    label: 'Eventos de Temporada',
+    breackpoint: 'md',
+    route: '/eventos-escolares',
+    items: [
+      {
+        label: 'Curso de Verano',
+        breackpoint: 'md',
+        route: '/eventos-escolares/paseos'
+      },
+      {
+        label: 'Eventos especiales',
+        breackpoint: 'md',
+        route: '/eventos-escolares/eventos-tematicos'
+      }
+    ]
+  },
+  {
     label: 'Campamentos',
     breackpoint: 'lg',
     route: '/campamentos',

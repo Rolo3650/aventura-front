@@ -40,10 +40,17 @@ export default function Parties() {
       <TitleOne text='Renta de Autobuses' />
       <BoxStyled maxWidth={'1200px'} marginX={'auto'} paddingY={4}>
         <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
-          Si estás planeando un viaje de turismo o una excursión larga, nuestros autobuses de turismo con capacidad para
-          47 a 53 plazas son la elección perfecta. Estos autobuses están equipados con asientos reclinables, aire
+          Ofrecemos servicios de mobilidad grupal a travez de nuestros autobuses y camionetas con conductores certificados, hacia cualquier destino dentro de México.
+          Estos autobuses están equipados con asientos reclinables, aire
           acondicionado, y sistemas de entretenimiento para asegurar que todos los pasajeros disfruten de un viaje
           placentero y relajante.
+          <br />
+          <br />
+          <ul>
+            <li>Autobuses de Turismo: 47 - 53 plazas</li>
+            <li>Autobuses Escolar: 40 pasajeros</li>
+            <li>Camioneta Sprinter: 13 o 20 pasajeros</li>
+          </ul>
         </Typography>
       </BoxStyled>
       <ServicesOne />

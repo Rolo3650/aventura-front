@@ -46,7 +46,7 @@ export default function Parties() {
           <br />
           <br />
           Para garantizar la seguridad de todos los participantes, cada grupo contará con la supervisión de al menos un
-          explorador por cada 10-12 alumnos. Además, ofrecemos un seguro contra accidentes con una cobertura de hasta
+          explorador por cada 15 alumnos. Además, ofrecemos un seguro contra accidentes con una cobertura de hasta
           $20,000.00 y servicio médico por botiquín disponible en todo momento.
           <br />
           <br />

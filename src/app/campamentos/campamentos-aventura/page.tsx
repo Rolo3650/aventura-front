@@ -72,10 +72,10 @@ export default function Parties() {
           <li>Fogata</li>
           <li>Actividades Acuáticas</li>
           <li>Clausura con participación de papás</li>
-          <li>Staff capacitado, 1 explorador por cada 15 alumnos</li>
+          <li>Staff capacitado, 1 explorador por cada 10 alumnos</li>
           <li>Actividades recreativas</li>
-          <li>Seguro contra accidentes (hasta $ 20,000.00)</li>
-          <li>Servicio medico por botiquín</li>
+          <li>Seguro contra accidentes (hasta $ 100,000.00)</li>
+          <li>Servicio médico por botiquín</li>
           {/* Nuestros campamentos en el plantel ofrecen todo lo necesario para vivir una verdadera aventura al aire libre,
           con el equipo completo y los elementos esenciales para una experiencia auténtica. Desde tiendas de campaña
           adaptables a cualquier superficie hasta alimentos deliciosos y nutritivos servidos en horarios regulares, nos

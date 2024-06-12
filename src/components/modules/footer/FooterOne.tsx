@@ -33,11 +33,11 @@ const FooterOne = () => {
             Teléfono: <strong>55-89-38-52-35 Y 55-89-38-52-96</strong>
           </Typography>
           <Typography variant='body1' fontWeight={400}>
-            Correo: <strong>info@aventuraentuescuela-com-mx</strong>
+            Correo: <strong>info@aventuraentuescuela.com.mx</strong>
           </Typography>
           <Typography variant='body1' fontWeight={400}>
             Dirección:{' '}
-            <strong>C. Pierre Lyonnet 70a, Jardines de Satelite, 53129 Naucalpan de Juárez, 53129 mexico, Méx.</strong>
+            <strong>C. Pierre Lyonnet 70a, Jardines de Satelite,  C.P. 53129, Naucalpan de Juárez, Estado de México, Méx.</strong>
           </Typography>
           <Link
             sx={{
