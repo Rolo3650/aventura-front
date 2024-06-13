@@ -1,7 +1,7 @@
 'use client'
 import { MenuOne } from '@/components/inputs'
 import { navigationConfigQueretaro } from '@/core'
-import { Box, Breakpoint, Button, ButtonProps, MenuItem, Typography, styled } from '@mui/material'
+import { Box, Breakpoint, Button, ButtonProps, Typography, styled } from '@mui/material'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
@@ -47,18 +47,7 @@ const NavbarDesktopTwo = () => {
           )
         } else {
           return (
-            <MenuOne key={nav.route} nav={nav} index={index}>
-              {nav.items?.map(item => (
-                <MenuItem
-                  key={item.route}
-                  onClick={() => {
-                    router.push(item.route)
-                  }}
-                >
-                  {item.label}
-                </MenuItem>
-              ))}
-            </MenuOne>
+            <MenuOne key={nav.route} nav={nav} index={index} />
           )
         }
       })}
