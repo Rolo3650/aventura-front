@@ -14,6 +14,23 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
   }
 }))
 
+const BoxVideo = styled(Box)<BoxProps>(({ theme }) => ({
+  [theme.breakpoints.up('md')]: {
+    '& video': {
+      width: '900px',
+      height: '500px'
+    }
+  },
+  [theme.breakpoints.down('sm')]: {
+    maxHeight: '100vh',
+    '& video': {
+      width: '320px',
+      height: '200px'
+    }
+  }
+}))
+
+
 export default function Parties() {
   const imgs: Img[] = [
     {
@@ -62,6 +79,30 @@ export default function Parties() {
     {
       alt: 'img-5',
       src: '/imgs/recuerdos/campamentos/img_5.jpg'
+    },
+    {
+      alt: 'img-6',
+      src: '/imgs/recuerdos/campamentos/img_6.jpg'
+    },
+    {
+      alt: 'img-7',
+      src: '/imgs/recuerdos/campamentos/img_7.jpg'
+    },
+    {
+      alt: 'img-8',
+      src: '/imgs/recuerdos/campamentos/img_8.jpg'
+    },
+    {
+      alt: 'img-9',
+      src: '/imgs/recuerdos/campamentos/img_9.jpg'
+    },
+    {
+      alt: 'img-10',
+      src: '/imgs/recuerdos/campamentos/img_10.jpg'
+    },
+    {
+      alt: 'img-11',
+      src: '/imgs/recuerdos/campamentos/img_11.jpg'
     },
   ]
 
@@ -134,6 +175,25 @@ export default function Parties() {
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
         <MemoriesOne title='Recuerdos' imgs={imgs2} />
       </BoxStyled>
+      <br />
+      <TitleOne text='Finca Villa Victoria (EDO MEX)' />
+      <br />
+      <BoxVideo textAlign={'center'}>
+        <video src='/imgs/banners/campamentos/Video Camp Villa victoria.mp4' autoPlay={false} controls />
+      </BoxVideo>
+      <br />
+      <br />
+      <TitleOne text='Finca Villa Victoria (EDO MEX)' />
+      <br />
+      <BoxVideo textAlign={'center'}>
+        <video src='/imgs/banners/campamentos/video_1.mp4' autoPlay={false} controls />
+      </BoxVideo>
+      <br />
+      <TitleOne text='Finca Villa Victoria (EDO MEX)' />
+      <br />
+      <BoxVideo textAlign={'center'}>
+        <video src='/imgs/banners/campamentos/video_2.mp4' autoPlay={false} controls />
+      </BoxVideo>
       <ServicesOne />
     </main>
   )

@@ -22,34 +22,39 @@ export default function Parties() {
           <br />
           Nuestro Staff
           <br />
-          Staff Directivo Director General: Lic. Antonio Román Bravo
           <br />
-          Subdirector: Giovanni Mejia Zamora Coordinadora de
+          Director General: Lic. Antonio Román Bravo
           <br />
-          Operaciones: Lic. Esmeralda Organista Hernández Coordinadores : Gerardo R. Pantoja e Ingrid Luna Castillo
+          Subdirector: Giovanni Mejia Zamora
           <br />
-          Coordinadora After School: Daniela Flores Sosa Coordinador de Logística: Cesar del Bosque Gutierrez Jefe de
+          Coordinadora de Operaciones: Lic. Esmeralda Organista Hernández
           <br />
-          Logística: Gerardo del Bosque Gutierrez
+          Coordinadores : Gerardo R. Pantoja e Ingrid Luna Castillo
+          <br />
+          Coordinadora After School: Daniela Flores Sosa
+          <br />
+          Coordinador de Logística: Cesar del Bosque Gutierrez
+          <br />
+          Jefe de Logística: Gerardo del Bosque Gutierrez
           <br />
           Auxiliar de Logistica: Alejandro Urrutia Gamboa
           <br />
-          Formación académica y sistemas: Rodrigo Morales Campuzano
+          Formación académica y sistemas (Jefe de Esmeralda): Rodrigo Morales Campuzano
           <br />
           <br />
           <TitleOne text='Exploradores' />
           <br />
           <br />
-          Exploradores Son Jovenes de 18 a 25 años con gran amor por su trabajo altamente capacitados en la áreas de
+          Son Jovenes de 18 a 25 años con gran amor por su trabajo altamente capacitados en la áreas de
           pedagogía, psicología, recreación, campismo y primeros auxilios desempeñando todas estas con una alta calidad
           profesional para trasmitirles a los niñosy jovenes experiencias con una alto contenido formativo y recreativo.
           <br />
           <br />
-          <TitleOne text='Programa' />
+          <TitleOne text='Programa de Asistentes y Exploradores Jr.' />
           <br />
           <br />
-          Programa de Asistentes Nuestra empresa cuenta con un programa único, en el cual participa un grupo de
-          iniciación, que está conformado por jóvenes de entre 12 y 16 años que se encuentran en capacitación y
+          Nuestra empresa cuenta con un programa único, en el cual participa un grupo de
+          iniciación, que está conformado por jóvenes de entre 12 y 17 años que se encuentran en capacitación y
           formación constante participando activamente en los eventos en los cuales poco a poco van aprendiendo para
           posteriormente participar como exploradores.
           <br />

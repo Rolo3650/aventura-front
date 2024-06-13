@@ -39,7 +39,7 @@ export default function Parties() {
           <br />
           Auxiliar de Logistica: Alejandro Urrutia Gamboa
           <br />
-          Formación académica y sistemas (Jefe de Esmeralda): Rodrigo Morales Campuzano
+          Formación académica y sistemas (Jefe de Esmeralda): Rodrigo Morales Campuzano
           <br />
           <br />
           <TitleOne text='Exploradores' />

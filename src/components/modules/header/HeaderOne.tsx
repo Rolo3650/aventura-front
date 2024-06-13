@@ -99,6 +99,19 @@ const HeaderOne = () => {
               {pathname.includes('Queretaro') && <NavbarDesktopTwo />}
             </BoxItem>
           </GridDesktop>
+          <Grid item xs={2}>
+            <BoxItem display={'flex'} justifyContent={'center'} alignItems={'center'}>
+              <img
+                style={{ cursor: 'pointer' }}
+                src={'/imgs/logos/img_1.jpg'}
+                alt='logo-aventura'
+                className='logo'
+                onClick={() => {
+                  router.push('/')
+                }}
+              />
+            </BoxItem>
+          </Grid>
         </Grid>
       </Box>
       <Drawer

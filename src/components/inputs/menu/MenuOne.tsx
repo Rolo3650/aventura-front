@@ -1,6 +1,7 @@
 'use client'
 import { NavigationItem, navigationConfig } from '@/core'
-import { Breakpoint, Button, ButtonProps, Menu, Typography, styled } from '@mui/material'
+import { Breakpoint, Button, ButtonProps, Menu, MenuItem, Typography, styled } from '@mui/material'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 interface ButtonStyled extends ButtonProps {
@@ -22,7 +23,8 @@ const ButtonStyled = styled(Button)<ButtonStyled>(({ breakpoint, theme }) => ({
   borderRadius: '0'
 }))
 
-const MenuOne = ({ nav, index, children }: { nav: NavigationItem; index: number; children: React.ReactNode }) => {
+const MenuOne = ({ nav, index }: { nav: NavigationItem; index: number; }) => {
+  const router = useRouter()
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
   const open = Boolean(anchorEl)
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -56,7 +58,17 @@ const MenuOne = ({ nav, index, children }: { nav: NavigationItem; index: number;
           'aria-labelledby': 'basic-button'
         }}
       >
-        {children}
+        {nav.items?.map(item => (
+          <MenuItem
+            key={item.route}
+            onClick={() => {
+              router.push(item.route)
+              setAnchorEl(null)
+            }}
+          >
+            {item.label}
+          </MenuItem>
+        ))}
       </Menu>
     </>
   )

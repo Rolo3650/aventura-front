@@ -29,6 +29,23 @@ const navigationConfigQueretaro: NavigationItem[] = [
     ]
   },
   {
+    label: 'Eventos de Temporada',
+    breackpoint: 'md',
+    route: '/Queretaro/eventos-de-temporada',
+    items: [
+      {
+        label: 'Curso de Verano',
+        breackpoint: 'md',
+        route: '/Queretaro/eventos-de-temporada/curso-de-verano',
+      },
+      {
+        label: 'Eventos especiales',
+        breackpoint: 'md',
+        route: '/Queretaro/eventos-de-temporada/eventos-especiales'
+      }
+    ]
+  },
+  {
     label: 'Campamentos',
     breackpoint: 'lg',
     route: '/Queretaro/campamentos',

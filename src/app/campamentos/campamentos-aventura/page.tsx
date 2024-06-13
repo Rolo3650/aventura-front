@@ -51,15 +51,14 @@ export default function Parties() {
       <TitleOne text='Campamentos Aventura' />
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
         <Typography variant='body1' sx={{ textAlign: 'justify' }} paddingY={4} fontWeight={'bold'}>
-          En Aventura en tu Escuela, hemos creado un nuevo concepto de diversión que lleva la emoción de un campamento
-          directamente a tu escuela. Con nuestro innovador servicio de campamentos en el plantel, los estudiantes de
-          Kinder, Primaria y Secundaria pueden disfrutar de una experiencia completamente diferente sin tener que salir
-          de su entorno familiar.
+          CONTRATA PARA TU ESCUELA, NUESTROS CAMPAMENTOS DE AVENTURA EN LOS QUE TE LLEVAREMOS INCREÍBLES SORPRESAS.   🥳🎁
           <br />
           <br />
-          Nuestros programas de campamento están diseñados para promover la integración, el trabajo en equipo y el
-          desarrollo personal a través de una variedad de actividades formativas y dinámicas. Desde emocionantes rallies
-          hasta actividades de competencia, destreza y habilidad, cada día está lleno de diversión y aprendizaje.
+          Contrata para tu escuela y conoce a los diferentes campamentos  que tenemos para ti como: Aventuras, Espacial 🪐, Medieval 🤴, Magos y hechiceras 🧙‍♂, superhéroes 🦸‍♂, mexicano 🇲🇽, halloween 👻 y ¡más!
+          <br />
+          <br />
+          ¡Será una experiencia completamente DIFERENTE Y DIVERTIDA!
+          Solicita tu presupuesto de acuerdo al número de niños  💵  contamos con paquetes desde 15 niños
           {/* <br />
           <br />
         Cada campamento cuenta con la supervisión de nuestro equipo de expertos, incluyendo al menos un explorador por cada patrulla o equipo de alumnos, para garantizar la seguridad y el bienestar de todos los participantes. Además, ofrecemos servicio médico de primeros auxilios en caso de cualquier emergencia. */}

@@ -24,7 +24,7 @@ const MemoriesOne = ({ title, imgs }: { title: string; imgs: Img[] }) => {
         <Grid container>
           {!more &&
             imgs?.slice(0, 3).map(img => (
-              <Grid key={img.alt} sm={4} md={3} display={'flex'} justifyContent={'center'} p={2} alignItems={'center'}>
+              <Grid item key={img.alt} sm={4} md={3} display={'flex'} justifyContent={'center'} p={2} alignItems={'center'}>
                 <Box>
                   <CardStyled>
                     <CardContent>
@@ -50,7 +50,7 @@ const MemoriesOne = ({ title, imgs }: { title: string; imgs: Img[] }) => {
                 </Box>
               </Grid>
             ))}
-          <Grid sm={12} md={3} display={'flex'} justifyContent={'center'} p={2} alignItems={'center'}>
+          <Grid item sm={12} md={3} display={'flex'} justifyContent={'center'} p={2} alignItems={'center'}>
             <Button
               onClick={() => {
                 setMore(!more)

@@ -18,47 +18,47 @@ export default function Parties() {
   const imgs: Img[] = [
     {
       alt: 'img-1',
-      src: '/imgs/banners/fiestas/img_1.jpg'
+      src: '/imgs/banners-queretaro/fiestas/img_1.jpg'
     },
     {
       alt: 'img-2',
-      src: '/imgs/banners/fiestas/img_2.jpeg'
+      src: '/imgs/banners-queretaro/fiestas/img_2.jpeg'
     },
     {
       alt: 'img-3',
-      src: '/imgs/banners/fiestas/img_3.jpeg'
+      src: '/imgs/banners-queretaro/fiestas/img_3.jpeg'
     },
     {
       alt: 'img-4',
-      src: '/imgs/banners/fiestas/img_4.jpg'
+      src: '/imgs/banners-queretaro/fiestas/img_4.jpg'
     },
     {
       alt: 'img-5',
-      src: '/imgs/banners/fiestas/img_5.jpg'
+      src: '/imgs/banners-queretaro/fiestas/img_5.jpg'
     },
     {
       alt: 'img-6',
-      src: '/imgs/banners/fiestas/img_6.jpg'
+      src: '/imgs/banners-queretaro/fiestas/img_6.jpg'
     },
     {
       alt: 'img-7',
-      src: '/imgs/banners/fiestas/img_7.jpg'
+      src: '/imgs/banners-queretaro/fiestas/img_7.jpg'
     },
     {
       alt: 'img-8',
-      src: '/imgs/banners/fiestas/img_8.jpg'
+      src: '/imgs/banners-queretaro/fiestas/img_8.jpg'
     },
     {
       alt: 'img-9',
-      src: '/imgs/banners/fiestas/img_9.jpg'
+      src: '/imgs/banners-queretaro/fiestas/img_9.jpg'
     },
     {
       alt: 'img-10',
-      src: '/imgs/banners/fiestas/img_10.jpg'
+      src: '/imgs/banners-queretaro/fiestas/img_10.jpg'
     },
     {
       alt: 'img-11',
-      src: '/imgs/banners/fiestas/img_11.png'
+      src: '/imgs/banners-queretaro/fiestas/img_11.png'
     }
   ]
 
@@ -109,12 +109,14 @@ export default function Parties() {
         <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
           <br />
           <br />
-          Ya sea que estés buscando organizar una celebración especial como: ejemplos día niño, estudiante, graduación,
-          Halloween, eventos de temporada
+          ¿Quieres una fiesta diferente y única? 🥳
           <br />
           <br />
-          ¡Prepárate para vivir una experiencia inolvidable llena de diversión, risas y momentos memorables con Aventura
-          en tu Escuela!
+          Te ofrecemos nuestras  FIESTAS DE AVENTURA en las que llevamos toda la diversión y la AVENTURA hasta ti.  🏡🏘
+          <br />
+          <br />
+          Contamos con paquetes desde 5 niños y muchísimas actividades que harán que pases ¡un día lleno de diversión! 🌈🥳🤩  ¡Tenemos fiestas temáticas!
+          Mándanos un inbox si quieres mas información.... 📲
           <br />
           {/* <br />
           Nuestros servicios de fiestas están diseñados para ofrecer una experiencia única y memorable para los
