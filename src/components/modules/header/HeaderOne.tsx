@@ -52,7 +52,16 @@ const BoxItem = styled(Box)<BoxProps>(({ theme }) => ({
   }
 }))
 
-const MenuButton = styled(IconButton)<IconButtonProps>(({}) => ({
+const BoxItem2 = styled(Box)<BoxProps>(({ }) => ({
+  "& img": {
+    height: '100px !important',
+    width: '100px !important',
+    backgroundColor: '#fff',
+    borderRadius: "50px"
+  }
+}))
+
+const MenuButton = styled(IconButton)<IconButtonProps>(({ }) => ({
   ':hover': {
     transform: 'rotate(90deg)'
   },
@@ -84,7 +93,7 @@ const HeaderOne = () => {
             <BoxItem display={'flex'} justifyContent={'center'} alignItems={'center'}>
               <img
                 style={{ cursor: 'pointer' }}
-                src={'/imgs/logos/logo_1.png'}
+                src={pathname.includes('Queretaro') ? '/imgs/logos/logo_2.png' : '/imgs/logos/logo_1.png'}
                 alt='logo-aventura'
                 className='logo'
                 onClick={() => {
@@ -100,17 +109,17 @@ const HeaderOne = () => {
             </BoxItem>
           </GridDesktop>
           <Grid item xs={2}>
-            <BoxItem display={'flex'} justifyContent={'center'} alignItems={'center'}>
+            <BoxItem2 display={'flex'} justifyContent={'center'} alignItems={'center'}>
               <img
                 style={{ cursor: 'pointer' }}
-                src={'/imgs/logos/img_1.jpg'}
+                src={'/imgs/logos/logo_3.png'}
                 alt='logo-aventura'
                 className='logo'
                 onClick={() => {
                   router.push('/')
                 }}
               />
-            </BoxItem>
+            </BoxItem2>
           </Grid>
         </Grid>
       </Box>
