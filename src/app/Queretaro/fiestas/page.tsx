@@ -22,11 +22,11 @@ export default function Parties() {
     },
     {
       alt: 'img-2',
-      src: '/imgs/banners-queretaro/fiestas/img_2.jpeg'
+      src: '/imgs/banners-queretaro/fiestas/img_12.jpg'
     },
     {
       alt: 'img-3',
-      src: '/imgs/banners-queretaro/fiestas/img_3.jpeg'
+      src: '/imgs/banners-queretaro/fiestas/img_11.jpg'
     },
     {
       alt: 'img-4',
@@ -49,17 +49,13 @@ export default function Parties() {
       src: '/imgs/banners-queretaro/fiestas/img_8.jpg'
     },
     {
-      alt: 'img-9',
-      src: '/imgs/banners-queretaro/fiestas/img_9.jpg'
-    },
-    {
       alt: 'img-10',
       src: '/imgs/banners-queretaro/fiestas/img_10.jpg'
     },
     {
-      alt: 'img-11',
-      src: '/imgs/banners-queretaro/fiestas/img_11.png'
-    }
+      alt: 'img-13',
+      src: '/imgs/banners-queretaro/fiestas/img_13.jpg'
+    },
   ]
 
   const imgs2: Img[] = [

@@ -34,6 +34,10 @@ const BoxVideo = styled(Box)<BoxProps>(({ theme }) => ({
 export default function Parties() {
   const imgs: Img[] = [
     {
+      alt: 'img-7',
+      src: '/imgs/banners-queretaro/campamentos/img_7.jpg'
+    },
+    {
       alt: 'img-1',
       src: '/imgs/banners-queretaro/campamentos/img_1.jpg'
     },

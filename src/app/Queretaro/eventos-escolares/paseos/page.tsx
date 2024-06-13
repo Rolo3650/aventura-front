@@ -17,6 +17,10 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
 export default function Parties() {
   const imgs: Img[] = [
     {
+      alt: 'img-3',
+      src: '/imgs/banners-queretaro/paseos/img_3.jpg'
+    },
+    {
       alt: 'img-1',
       src: '/imgs/banners-queretaro/paseos/img_1.jpg'
     },

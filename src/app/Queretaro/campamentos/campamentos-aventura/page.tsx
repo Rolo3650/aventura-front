@@ -20,6 +20,14 @@ export default function Parties() {
       alt: 'img-1',
       src: '/imgs/banners-queretaro/campamentos_aventura/img_9.jpg'
     },
+    {
+      alt: 'img-1',
+      src: '/imgs/banners-queretaro/campamentos_aventura/img_11.jpg'
+    },
+    {
+      alt: 'img-1',
+      src: '/imgs/banners-queretaro/campamentos_aventura/img_12.jpg'
+    },
   ]
 
   const imgs2: Img[] = [

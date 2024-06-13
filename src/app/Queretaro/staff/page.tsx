@@ -27,19 +27,11 @@ export default function Parties() {
           <br />
           Subdirector: Giovanni Mejia Zamora
           <br />
-          Coordinadora de Operaciones: Lic. Esmeralda Organista Hernández
+          Coordinador de Operaciones Jorge M. Moreno Hernández 
           <br />
-          Coordinadores : Gerardo R. Pantoja e Ingrid Luna Castillo
+          Coordinadores: Máximo García y Daniela López
           <br />
-          Coordinadora After School: Daniela Flores Sosa
-          <br />
-          Coordinador de Logística: Cesar del Bosque Gutierrez
-          <br />
-          Jefe de Logística: Gerardo del Bosque Gutierrez
-          <br />
-          Auxiliar de Logistica: Alejandro Urrutia Gamboa
-          <br />
-          Formación académica y sistemas (Jefe de Esmeralda): Rodrigo Morales Campuzano
+          Sistemas: Rodrigo Morales Campuzano
           <br />
           <br />
           <TitleOne text='Exploradores' />

@@ -22,7 +22,7 @@ export default function Parties() {
     },
     {
       alt: 'img-2',
-      src: '/imgs/banners-queretaro/fiestas_tematicas/img_2.jpeg'
+      src: '/imgs/banners-queretaro/fiestas_tematicas/img_13.jpg'
     },
     
     // {
@@ -47,15 +47,11 @@ export default function Parties() {
     },
     {
       alt: 'img-8',
-      src: '/imgs/banners-queretaro/fiestas_tematicas/img_8.jpeg'
+      src: '/imgs/banners-queretaro/fiestas_tematicas/img_8.jpg'
     },
     {
       alt: 'img-9',
-      src: '/imgs/banners-queretaro/fiestas_tematicas/img_9.jpeg'
-    },
-    {
-      alt: 'img-10',
-      src: '/imgs/banners-queretaro/fiestas_tematicas/img_10.jpeg'
+      src: '/imgs/banners-queretaro/fiestas_tematicas/img_9.jpg'
     },
     {
       alt: 'img-11',
@@ -63,7 +59,15 @@ export default function Parties() {
     },
     {
       alt: 'img-12',
-      src: '/imgs/banners-queretaro/fiestas_tematicas/img_12.jpeg'
+      src: '/imgs/banners-queretaro/fiestas_tematicas/img_12.jpg'
+    },
+    {
+      alt: 'img-14',
+      src: '/imgs/banners-queretaro/fiestas_tematicas/img_14.jpg'
+    },
+    {
+      alt: 'img-15',
+      src: '/imgs/banners-queretaro/fiestas_tematicas/img_15.jpg'
     }
   ]
 
