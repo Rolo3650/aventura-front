@@ -98,7 +98,131 @@ export default function Parties() {
     {
       alt: 'img-18',
       src: '/imgs/recuerdos/paseos/img_18.jpg'
+    }
+  ]
+
+  const imgs3: Img[] = [
+    {
+      alt: 'img-1',
+      src: '/imgs/recuerdos/paseos/img_1.jpg'
     },
+    {
+      alt: 'img-2',
+      src: '/imgs/recuerdos/paseos/img_2.jpg'
+    },
+    {
+      alt: 'img-3',
+      src: '/imgs/recuerdos/paseos/img_3.jpg'
+    },
+    {
+      alt: 'img-4',
+      src: '/imgs/recuerdos/paseos/img_4.jpg'
+    },
+    {
+      alt: 'img-5',
+      src: '/imgs/recuerdos/paseos/img_5.jpg'
+    },
+    {
+      alt: 'img-6',
+      src: '/imgs/recuerdos/paseos/img_6.jpg'
+    },
+    {
+      alt: 'img-7',
+      src: '/imgs/recuerdos/paseos/img_7.jpg'
+    },
+    {
+      alt: 'img-8',
+      src: '/imgs/recuerdos/paseos/img_8.jpg'
+    },
+    {
+      alt: 'img-9',
+      src: '/imgs/recuerdos/paseos/img_9.jpg'
+    },
+    {
+      alt: 'img-10',
+      src: '/imgs/recuerdos/paseos/img_10.jpg'
+    },
+    {
+      alt: 'img-11',
+      src: '/imgs/recuerdos/paseos/img_11.jpg'
+    },
+    {
+      alt: 'img-12',
+      src: '/imgs/recuerdos/paseos/img_12.jpg'
+    },
+    {
+      alt: 'img-13',
+      src: '/imgs/recuerdos/paseos/img_13.jpg'
+    },
+    {
+      alt: 'img-14',
+      src: '/imgs/recuerdos/paseos/img_14.jpg'
+    },
+    {
+      alt: 'img-15',
+      src: '/imgs/recuerdos/paseos/img_15.jpg'
+    },
+    {
+      alt: 'img-16',
+      src: '/imgs/recuerdos/paseos/img_16.jpg'
+    },
+    {
+      alt: 'img-17',
+      src: '/imgs/recuerdos/paseos/img_17.jpg'
+    },
+    {
+      alt: 'img-18',
+      src: '/imgs/recuerdos/paseos/img_18.jpg'
+    },
+    {
+      alt: 'img-19',
+      src: '/imgs/recuerdos/paseos/img_19.jpg'
+    },
+
+    {
+      alt: 'img-20',
+      src: '/imgs/recuerdos/paseos/img_20.jpg'
+    },
+    {
+      alt: 'img-21',
+      src: '/imgs/recuerdos/paseos/img_21.jpg'
+    },
+    {
+      alt: 'img-22',
+      src: '/imgs/recuerdos/paseos/img_22.jpg'
+    },
+    {
+      alt: 'img-23',
+      src: '/imgs/recuerdos/paseos/img_23.jpg'
+    },
+    {
+      alt: 'img-24',
+      src: '/imgs/recuerdos/paseos/img_24.jpg'
+    },
+    {
+      alt: 'img-25',
+      src: '/imgs/recuerdos/paseos/img_25.jpg'
+    },
+    {
+      alt: 'img-26',
+      src: '/imgs/recuerdos/paseos/img_26.jpg'
+    },
+    {
+      alt: 'img-27',
+      src: '/imgs/recuerdos/paseos/img_27.jpg'
+    },
+    {
+      alt: 'img-28',
+      src: '/imgs/recuerdos/paseos/img_28.jpg'
+    },
+    {
+      alt: 'img-29',
+      src: '/imgs/recuerdos/paseos/img_29.jpg'
+    },
+    {
+      alt: 'img-30',
+      src: '/imgs/recuerdos/paseos/img_30.jpg'
+    }
   ]
 
   return (
@@ -115,55 +239,37 @@ export default function Parties() {
       <TitleOne text='Paseos o Visitas Escolares' />
       <BoxStyled maxWidth={'1200px'} marginX={'auto'} paddingY={4}>
         <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
-          En AVENTURA EN TU ESCUELA entendemos la importancia de brindar a los estudiantes experiencias educativas y divertidas. Es por eso que hemos diseñado un servicio de excursiones escolares, pensado para divertirse, aprender y conocer lugares y regiones de México.
+          En AVENTURA EN TU ESCUELA entendemos la importancia de brindar a los estudiantes experiencias educativas y
+          divertidas. Es por eso que hemos diseñado un servicio de excursiones escolares, pensado para divertirse,
+          aprender y conocer lugares y regiones de México.
           <br />
           <br />
-          Con nuestras salidas educativas
-          Podrán descubrir:
+          Con nuestras salidas educativas Podrán descubrir:
           <ul>
-            <li>
-              MUSEOS
-            </li>
-            <li>
-              FABRICAS
-            </li>
-            <li>
-              PARQUES
-            </li>
-            <li>
-              ZONAS ARQUEOLOGICAS
-            </li>
+            <li>MUSEOS</li>
+            <li>FABRICAS</li>
+            <li>PARQUES</li>
+            <li>ZONAS ARQUEOLOGICAS</li>
           </ul>
           <br />
           <br />
-          Prismas Basálticos, disfrutar de la emoción sin límites en Six Flags México, sumergirse en la historia de Guanajuato y explorar las enigmáticas Pirámides de Teotihuacán. Nuestro equipo especializado se encarga de todos los detalles logísticos y de seguridad, para que los alumnos puedan disfrutar al máximo de estas aventuras inolvidables. ¡Únete a un viaje de aprendizaje y diversión,con memorias perdurables en México!
+          Prismas Basálticos, disfrutar de la emoción sin límites en Six Flags México, sumergirse en la historia de
+          Guanajuato y explorar las enigmáticas Pirámides de Teotihuacán. Nuestro equipo especializado se encarga de
+          todos los detalles logísticos y de seguridad, para que los alumnos puedan disfrutar al máximo de estas
+          aventuras inolvidables. ¡Únete a un viaje de aprendizaje y diversión,con memorias perdurables en México!
           <br />
           <br />
           TE INCLUIMOS:
           <br />
           <br />
           <ul>
-            <li>
-              Transporte en autobús de turismo
-            </li>
-            <li>
-              Alimentos (Opcional)
-            </li>
-            <li>
-              Entradas a los lugares de visita
-            </li>
-            <li>
-              Recorridos guiados
-            </li>
-            <li>
-              Información cultural detallada
-            </li>
-            <li>
-              1 explorador por cada 15 alumnos
-            </li>
-            <li>
-              Botiquin de primeros auxilios
-            </li>
+            <li>Transporte en autobús de turismo</li>
+            <li>Alimentos (Opcional)</li>
+            <li>Entradas a los lugares de visita</li>
+            <li>Recorridos guiados</li>
+            <li>Información cultural detallada</li>
+            <li>1 explorador por cada 15 alumnos</li>
+            <li>Botiquin de primeros auxilios</li>
           </ul>
         </Typography>
       </BoxStyled>
@@ -179,7 +285,7 @@ export default function Parties() {
         </BoxStyled> */}
       </Box>
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <MemoriesOne title='Recuerdos' imgs={imgs2} />
+        <MemoriesOne title='Recuerdos' imgs={imgs3} />
       </BoxStyled>
       <ServicesOne />
     </main>

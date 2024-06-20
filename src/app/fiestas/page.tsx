@@ -52,10 +52,11 @@ export default function Parties() {
       alt: 'img-9',
       src: '/imgs/banners/fiestas/img_9.jpg'
     },
-    {
-      alt: 'img-10',
-      src: '/imgs/banners/fiestas/img_10.jpg'
-    },
+    
+    // {
+    //   alt: 'img-10',
+    //   src: '/imgs/banners/fiestas/img_10.jpg'
+    // },
     {
       alt: 'img-11',
       src: '/imgs/banners/fiestas/img_11.png'

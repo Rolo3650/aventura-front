@@ -39,24 +39,24 @@ export default function Parties() {
           <br />
           Auxiliar de Logistica: Alejandro Urrutia Gamboa
           <br />
-          Formación académica y sistemas (Jefe de Esmeralda): Rodrigo Morales Campuzano
+          Formación académica y sistemas: Rodrigo Morales Campuzano
           <br />
           <br />
           <TitleOne text='Exploradores' />
           <br />
           <br />
-          Son Jovenes de 18 a 25 años con gran amor por su trabajo altamente capacitados en la áreas de
-          pedagogía, psicología, recreación, campismo y primeros auxilios desempeñando todas estas con una alta calidad
-          profesional para trasmitirles a los niñosy jovenes experiencias con una alto contenido formativo y recreativo.
+          Son Jovenes de 18 a 25 años con gran amor por su trabajo altamente capacitados en la áreas de pedagogía,
+          psicología, recreación, campismo y primeros auxilios desempeñando todas estas con una alta calidad profesional
+          para trasmitirles a los niñosy jovenes experiencias con una alto contenido formativo y recreativo.
           <br />
           <br />
           <TitleOne text='Programa de Asistentes y Exploradores Jr.' />
           <br />
           <br />
-          Nuestra empresa cuenta con un programa único, en el cual participa un grupo de
-          iniciación, que está conformado por jóvenes de entre 12 y 17 años que se encuentran en capacitación y
-          formación constante participando activamente en los eventos en los cuales poco a poco van aprendiendo para
-          posteriormente participar como exploradores.
+          Nuestra empresa cuenta con un programa único, en el cual participa un grupo de iniciación, que está conformado
+          por jóvenes de entre 12 y 17 años que se encuentran en capacitación y formación constante participando
+          activamente en los eventos en los cuales poco a poco van aprendiendo para posteriormente participar como
+          exploradores.
           <br />
           <br />
           El principal objetivo que mantiene este programa es fomentar las actividades sanas para prevenir conductas de

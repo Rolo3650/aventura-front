@@ -27,7 +27,7 @@ export default function Parties() {
     {
       alt: 'img-2',
       src: '/imgs/banners-queretaro/curso/img_2.jpg'
-    },
+    }
   ]
 
   const imgs2: Img[] = [
@@ -83,32 +83,57 @@ export default function Parties() {
           CURSO DE VERANO 2024 ¡VERANO DE AVENTURA! ⛱😎🌞
           <br />
           <br />
-          Horario: Lunes a viernes de 8:00 a 14:00 ⏰
-          Edades de 3 a 13 años divididos en tres categorías 🐿 Ardillas: 3-5 años, 🐻 Osos 6-9 años y 🦁 Leones de 10-13 años
+          Horario: Lunes a viernes de 8:00 a 14:00 ⏰ Edades de 3 a 13 años divididos en tres categorías 🐿 Ardillas:
+          3-5 años, 🐻 Osos 6-9 años y 🦁 Leones de 10-13 años
           <br />
           <br />
-          Actividades deportivas, manualidades, días temáticos, arte, ciencias, talento musical, proyectos ecológicos, juegos clásicos, repostería, rallys y circuitos de actividades de destreza y habilidad 🏀🏓🛹🛼🤽‍♀🚴‍♀🏆🎭🎨🎬🎤🥁
+          Actividades deportivas, manualidades, días temáticos, arte, ciencias, talento musical, proyectos ecológicos,
+          juegos clásicos, repostería, rallys y circuitos de actividades de destreza y habilidad
+          🏀🏓🛹🛼🤽‍♀🚴‍♀🏆🎭🎨🎬🎤🥁
           <br />
           <br />
-          Eventos especiales: (Kermes Aventura 🥳🤩, Color Fest 🎉🎊, Aventuratlón 🤸‍♂, Día de Inflables 📢, Clausura y presentación de talento musical con padres de familia 🎬
+          Eventos especiales: (Kermes Aventura 🥳🤩, Color Fest 🎉🎊, Aventuratlón 🤸‍♂, Día de Inflables 📢, Clausura y
+          presentación de talento musical con padres de familia 🎬
           <br />
           <br />
           <Box display={'flex'} justifyContent={'center'} flex={'wrap'}>
             <Box p={3}>
-              <Button variant='contained' onClick={() => {
-                window.open('/docs/Info del curso.pdf', '_blank');
-              }}>
+              <Button
+                variant='contained'
+                onClick={() => {
+                  window.open('/docs/Info del curso 1.pdf', '_blank')
+                }}
+              >
                 <Typography fontWeight={'600'}>
-                  Más información
+                  Curso de Verano
                   <br />
-                  del Curso de Verano
+                  GRAN RESERVA
+                  <br />
+                  PRESERVE JURIQUILLA
                 </Typography>
               </Button>
             </Box>
             <Box p={3}>
-              <Button variant='contained' onClick={() => {
-                window.open('/docs/camp de verano.pdf', '_blank');
-              }}>
+              <Button
+                variant='contained'
+                onClick={() => {
+                  window.open('/docs/Info del curso 2.pdf', '_blank')
+                }}
+              >
+                <Typography fontWeight={'600'}>
+                  Curso de Verano
+                  <br />
+                  PRESERVE SUR
+                </Typography>
+              </Button>
+            </Box>
+            <Box p={3}>
+              <Button
+                variant='contained'
+                onClick={() => {
+                  window.open('/docs/camp de verano 1.pdf', '_blank')
+                }}
+              >
                 <Typography fontWeight={'600'}>
                   Campamento
                   <br />
@@ -116,15 +141,16 @@ export default function Parties() {
                 </Typography>
               </Button>
             </Box>
-            <Box p={3}>
-              <Button variant='contained' onClick={() => {
-                window.open('https://maps.app.goo.gl/k3UH7A9cyGBXJFGh6?g_st=iwb', '_blank');
-              }}>
-                <Typography fontWeight={'600'}>
-                  Ubicación CEL
-                </Typography>
+            {/* <Box p={3}>
+              <Button
+                variant='contained'
+                onClick={() => {
+                  window.open('https://maps.app.goo.gl/k3UH7A9cyGBXJFGh6?g_st=iwb', '_blank')
+                }}
+              >
+                <Typography fontWeight={'600'}>Ubicación CEL</Typography>
               </Button>
-            </Box>
+            </Box> */}
           </Box>
           <br />
           <br />
