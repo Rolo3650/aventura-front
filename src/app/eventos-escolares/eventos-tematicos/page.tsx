@@ -24,7 +24,7 @@ export default function Parties() {
       alt: 'img-2',
       src: '/imgs/banners/fiestas_tematicas/img_2.jpeg'
     },
-    
+
     // {
     //   alt: 'img-3',
     //   src: '/imgs/banners/fiestas_tematicas/img_3.jpg'
@@ -33,10 +33,11 @@ export default function Parties() {
       alt: 'img-4',
       src: '/imgs/banners/fiestas_tematicas/img_4.jpg'
     },
-    {
-      alt: 'img-5',
-      src: '/imgs/banners/fiestas_tematicas/img_5.jpg'
-    },
+
+    // {
+    //   alt: 'img-5',
+    //   src: '/imgs/banners/fiestas_tematicas/img_5.jpg'
+    // },
     {
       alt: 'img-6',
       src: '/imgs/banners/fiestas_tematicas/img_6.jpg'
@@ -57,10 +58,11 @@ export default function Parties() {
       alt: 'img-10',
       src: '/imgs/banners/fiestas_tematicas/img_10.jpeg'
     },
-    {
-      alt: 'img-11',
-      src: '/imgs/banners/fiestas_tematicas/img_11.jpg'
-    },
+    
+    // {
+    //   alt: 'img-11',
+    //   src: '/imgs/banners/fiestas_tematicas/img_11.jpg'
+    // },
     {
       alt: 'img-12',
       src: '/imgs/banners/fiestas_tematicas/img_12.jpeg'
@@ -127,7 +129,7 @@ export default function Parties() {
     {
       alt: 'img-15',
       src: '/imgs/recuerdos/fiestas_tematicas/img_15.jpg'
-    },
+    }
   ]
 
   return (
@@ -158,7 +160,8 @@ export default function Parties() {
           la emoción y la aventura a tu escuela y crea recuerdos inolvidables para tus estudiantes!
           <br />
           <br />
-          Contamos con eventos para el Día del Niño, Día del Estudiante, San Valentín, Mañanita Mexicana, Posadas, Halloween, Día del Padre, Día de la Madre y/o eventos de integración.
+          Contamos con eventos para el Día del Niño, Día del Estudiante, San Valentín, Mañanita Mexicana, Posadas,
+          Halloween, Día del Padre, Día de la Madre y/o eventos de integración.
           <br />
           <br />
         </Typography>

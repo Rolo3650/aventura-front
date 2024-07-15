@@ -229,7 +229,7 @@ export default function Parties() {
     {
       alt: 'img-31',
       src: '/imgs/recuerdos/campamentos/img_31.jpg'
-    },
+    }
   ]
 
   return (
@@ -273,7 +273,7 @@ export default function Parties() {
           <br />
           <br />
           <li>Alimentos (desayuno, comida y cena) 4 o 7 alimentos abundantes</li>
-          <li>Tranporte</li>
+          <li>Trasnporte</li>
           <li>Hospedaje</li>
           <li>Fogata</li>
           <li>Playera</li>
@@ -310,13 +310,13 @@ export default function Parties() {
       </BoxVideo>
       <br />
       <br />
-      <TitleOne text='Finca Villa Victoria (EDO MEX)' />
+      <TitleOne text='Rancho Abekany (Tepotzotlan)' />
       <br />
       <BoxVideo textAlign={'center'}>
         <video src='/imgs/banners/campamentos/video_1.mp4' autoPlay={false} controls />
       </BoxVideo>
       <br />
-      <TitleOne text='Finca Villa Victoria (EDO MEX)' />
+      <TitleOne text='CDI (Tepotzotlan)' />
       <br />
       <BoxVideo textAlign={'center'}>
         <video src='/imgs/banners/campamentos/video_2.mp4' autoPlay={false} controls />

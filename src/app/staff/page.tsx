@@ -33,9 +33,9 @@ export default function Parties() {
           <br />
           Coordinadora After School: Daniela Flores Sosa
           <br />
-          Coordinador de Logística: Cesar del Bosque Gutierrez
+          Coordinador de Logística: César del Bosque Gutiérrez
           <br />
-          Jefe de Logística: Gerardo del Bosque Gutierrez
+          Jefe de Logística: Gerardo del Bosque Gutiérrez
           <br />
           Auxiliar de Logistica: Alejandro Urrutia Gamboa
           <br />
@@ -47,10 +47,10 @@ export default function Parties() {
           <br />
           Son Jovenes de 18 a 25 años con gran amor por su trabajo altamente capacitados en la áreas de pedagogía,
           psicología, recreación, campismo y primeros auxilios desempeñando todas estas con una alta calidad profesional
-          para trasmitirles a los niñosy jovenes experiencias con una alto contenido formativo y recreativo.
+          para trasmitirles a los niños y jóvenes experiencias con una alto contenido formativo y recreativo.
           <br />
           <br />
-          <TitleOne text='Programa de Asistentes y Exploradores Jr.' />
+          <TitleOne text='Programa Asistentes y Exploradores Jr.' />
           <br />
           <br />
           Nuestra empresa cuenta con un programa único, en el cual participa un grupo de iniciación, que está conformado

@@ -102,7 +102,7 @@ export default function Parties() {
     {
       alt: 'img-18',
       src: '/imgs/recuerdos/paseos/img_18.jpg'
-    },
+    }
   ]
 
   const imgs3: Img[] = [
@@ -182,7 +182,7 @@ export default function Parties() {
       alt: 'img-19',
       src: '/imgs/recuerdos/paseos/img_19.jpg'
     },
-    
+
     {
       alt: 'img-20',
       src: '/imgs/recuerdos/paseos/img_20.jpg'
@@ -226,7 +226,7 @@ export default function Parties() {
     {
       alt: 'img-30',
       src: '/imgs/recuerdos/paseos/img_30.jpg'
-    },
+    }
   ]
 
   return (
@@ -243,55 +243,38 @@ export default function Parties() {
       <TitleOne text='Paseos o Visitas Escolares' />
       <BoxStyled maxWidth={'1200px'} marginX={'auto'} paddingY={4}>
         <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
-          En AVENTURA EN TU ESCUELA entendemos la importancia de brindar a los estudiantes experiencias educativas y divertidas. Es por eso que hemos diseñado un servicio de excursiones escolares, pensado para divertirse, aprender y conocer lugares y regiones de México.
+          En AVENTURA EN TU ESCUELA entendemos la importancia de brindar a los estudiantes experiencias educativas y
+          divertidas. Es por eso que hemos diseñado un servicio de excursiones escolares, pensado para divertirse,
+          aprender y conocer lugares y regiones de México.
           <br />
           <br />
-          Con nuestras salidas educativas
-          Podrán descubrir:
+          Con nuestras salidas educativas podrán descubrir:
           <ul>
-            <li>
-              MUSEOS
-            </li>
-            <li>
-              FABRICAS
-            </li>
-            <li>
-              PARQUES
-            </li>
-            <li>
-              ZONAS ARQUEOLOGICAS
-            </li>
+            <li>MUSEOS</li>
+            <li>FABRICAS</li>
+            <li>PARQUES NATURALES</li>
+            <li>PARQUES TEMÁTICOS</li>
+            <li>ZONAS ARQUEOLOGICAS</li>
           </ul>
           <br />
           <br />
-          Prismas Basálticos, disfrutar de la emoción sin límites en Six Flags México, sumergirse en la historia de Guanajuato y explorar las enigmáticas Pirámides de Teotihuacán. Nuestro equipo especializado se encarga de todos los detalles logísticos y de seguridad, para que los alumnos puedan disfrutar al máximo de estas aventuras inolvidables. ¡Únete a un viaje de aprendizaje y diversión,con memorias perdurables en México!
+          Prismas Basálticos, disfrutar de la emoción sin límites en Six Flags México, sumergirse en la historia de
+          Guanajuato y explorar las enigmáticas Pirámides de Teotihuacán. Nuestro equipo especializado se encarga de
+          todos los detalles logísticos y de seguridad, para que los alumnos puedan disfrutar al máximo de estas
+          aventuras inolvidables. ¡Únete a un viaje de aprendizaje y diversión,con memorias perdurables en México!
           <br />
           <br />
           TE INCLUIMOS:
           <br />
           <br />
           <ul>
-            <li>
-              Transporte en autobús de turismo
-            </li>
-            <li>
-              Alimentos (Opcional)
-            </li>
-            <li>
-              Entradas a los lugares de visita
-            </li>
-            <li>
-              Recorridos guiados
-            </li>
-            <li>
-              Información cultural detallada
-            </li>
-            <li>
-              1 explorador por cada 15 alumnos
-            </li>
-            <li>
-              Botiquin de primeros auxilios
-            </li>
+            <li>Transporte en autobús de turismo</li>
+            <li>Alimentos (Opcional)</li>
+            <li>Entradas a los lugares de visita</li>
+            <li>Recorridos guiados</li>
+            <li>Información cultural detallada</li>
+            <li>1 explorador por cada 15 alumnos</li>
+            <li>Botiquin de primeros auxilios</li>
           </ul>
         </Typography>
       </BoxStyled>

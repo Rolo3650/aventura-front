@@ -30,7 +30,6 @@ const BoxVideo = styled(Box)<BoxProps>(({ theme }) => ({
   }
 }))
 
-
 export default function Parties() {
   const imgs: Img[] = [
     {
@@ -107,7 +106,7 @@ export default function Parties() {
     {
       alt: 'img-11',
       src: '/imgs/recuerdos/campamentos/img_11.jpg'
-    },
+    }
   ]
 
   const imgs3: Img[] = [
@@ -234,7 +233,7 @@ export default function Parties() {
     {
       alt: 'img-31',
       src: '/imgs/recuerdos/campamentos/img_31.jpg'
-    },
+    }
   ]
 
   return (
@@ -251,13 +250,14 @@ export default function Parties() {
       <TitleOne text='Campamentos Externos' />
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
         <Typography variant='body1' sx={{ textAlign: 'justify' }} paddingY={4} fontWeight={'bold'}>
-          Sumérgete en la naturaleza y vive una experiencia única en nuestros campamentos en nuestras diferentes sedes. En Aventura en tu Escuela, creemos en la importancia de conectar con el entorno natural y fomentar el
-          amor por el medio ambiente, y nuestros campamentos son la manera perfecta de hacerlo.
+          Sumérgete en la naturaleza y vive una experiencia única en nuestros campamentos en nuestras diferentes sedes.
+          En Aventura en tu Escuela, creemos en la importancia de conectar con el entorno natural y fomentar el amor por
+          el medio ambiente, y nuestros campamentos son la manera perfecta de hacerlo.
           <br />
           <br />
-          Ubicados en entornos naturales impresionantes, nuestras sedes ofrecen el escenario perfecto
-          para que los niños y jóvenes disfruten de actividades al aire libre, aprendan sobre la sana covivencia y
-          se sumerjan en la aventura en un entorno seguro y fascinante.
+          Ubicados en entornos naturales impresionantes, nuestras sedes ofrecen el escenario perfecto para que los niños
+          y jóvenes disfruten de actividades al aire libre, aprendan sobre la sana covivencia y se sumerjan en la
+          aventura en un entorno seguro y fascinante.
           <br />
           <br />
           Sedes:
@@ -271,13 +271,14 @@ export default function Parties() {
           <li>Rancho Diego (Morelos)</li>
           <li>Malinalco Camper Club (EDO MEX)</li>
           <li>Rancho Aventura (EDO MEX)</li>
+          <li>Cotocamp (San Juan del Río)</li>
           <br />
           <br />
           Incluye:
           <br />
           <br />
           <li>Alimentos (desayuno, comida y cena) 4 o 7 alimentos abundantes</li>
-          <li>Tranporte</li>
+          <li>Transporte</li>
           <li>Hospedaje</li>
           <li>Fogata</li>
           <li>Playera</li>

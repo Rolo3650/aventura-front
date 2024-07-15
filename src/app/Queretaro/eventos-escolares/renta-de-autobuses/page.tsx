@@ -40,7 +40,7 @@ export default function Parties() {
       <TitleOne text='Renta de Autobuses' />
       <BoxStyled maxWidth={'1200px'} marginX={'auto'} paddingY={4}>
         <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
-          Ofrecemos servicios de mobilidad grupal a travez de nuestros autobuses y camionetas con conductores certificados, hacia cualquier destino dentro de México.
+          Ofrecemos servicios de mobilidad grupal a través de nuestros autobuses y camionetas con conductores certificados, hacia cualquier destino dentro de México.
           Estos autobuses están equipados con asientos reclinables, aire
           acondicionado, y sistemas de entretenimiento para asegurar que todos los pasajeros disfruten de un viaje
           placentero y relajante.

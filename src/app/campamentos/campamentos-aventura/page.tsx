@@ -14,19 +14,35 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
   }
 }))
 
+const BoxVideo = styled(Box)<BoxProps>(({ theme }) => ({
+  [theme.breakpoints.up('md')]: {
+    '& iframe': {
+      width: '900px',
+      height: '500px'
+    }
+  },
+  [theme.breakpoints.down('sm')]: {
+    maxHeight: '100vh',
+    '& iframe': {
+      width: '320px',
+      height: '200px'
+    }
+  }
+}))
+
 export default function Parties() {
   const imgs: Img[] = [
     {
       alt: 'img-1',
-      src: '/imgs/banners/campamentos_aventura/img_9.jpg'
+      src: '/imgs/banners/fiestas_tematicas/img_11.jpg'
     },
   ]
 
   const imgs2: Img[] = [
-    {
-      alt: 'img-1',
-      src: '/imgs/recuerdos/campamentos_aventura/img_1.jpg'
-    },
+    // {
+    //   alt: 'img-1',
+    //   src: '/imgs/recuerdos/campamentos_aventura/img_1.jpg'
+    // },
     {
       alt: 'img-2',
       src: '/imgs/recuerdos/campamentos_aventura/img_2.jpg'
@@ -54,7 +70,7 @@ export default function Parties() {
           CONTRATA PARA TU ESCUELA, NUESTROS CAMPAMENTOS DE AVENTURA EN LOS QUE TE LLEVAREMOS INCREÍBLES SORPRESAS.   🥳🎁
           <br />
           <br />
-          Contrata para tu escuela y conoce a los diferentes campamentos  que tenemos para ti como: Aventuras, Espacial 🪐, Medieval 🤴, Magos y hechiceras 🧙‍♂, superhéroes 🦸‍♂, mexicano 🇲🇽, halloween 👻 y ¡más!
+          Contrata para tu escuela y conoce a los diferentes campamentos  que tenemos para ti como: Aventuras, Espacial 🪐, Medieval 🤴, Magos y hechiceras 🧙‍♂, superhéroes 🦸‍♂, mexicano, halloween 👻 y ¡más!
           <br />
           <br />
           ¡Será una experiencia completamente DIFERENTE Y DIVERTIDA!
@@ -74,7 +90,7 @@ export default function Parties() {
           <li>Staff capacitado, 1 explorador por cada 10 alumnos</li>
           <li>Actividades recreativas</li>
           <li>Seguro contra accidentes (hasta $ 100,000.00)</li>
-          <li>Servicio médico por botiquín</li>
+          <li>Servicio médico de primeros auxilios</li>
           {/* Nuestros campamentos en el plantel ofrecen todo lo necesario para vivir una verdadera aventura al aire libre,
           con el equipo completo y los elementos esenciales para una experiencia auténtica. Desde tiendas de campaña
           adaptables a cualquier superficie hasta alimentos deliciosos y nutritivos servidos en horarios regulares, nos
@@ -109,6 +125,9 @@ export default function Parties() {
           </Typography>
         </BoxStyled> */}
       </Box>
+      <BoxVideo textAlign={'center'}>
+        <iframe src='/imgs/banners/campamentos_aventura/video_1.mp4' />
+      </BoxVideo>
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
         <MemoriesOne title='Recuerdos' imgs={imgs2} />
       </BoxStyled>
