@@ -110,6 +110,9 @@ export default function Parties() {
       alt: 'img-10',
       src: '/imgs/recuerdos/fiestas_tematicas/img_10.jpg'
     },
+  ]
+
+  const imgs3: Img[] = [
     {
       alt: 'img-11',
       src: '/imgs/recuerdos/fiestas_tematicas/img_11.jpg'
@@ -129,6 +132,50 @@ export default function Parties() {
     {
       alt: 'img-15',
       src: '/imgs/recuerdos/fiestas_tematicas/img_15.jpg'
+    },
+    {
+      alt: 'img-16',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_16.jpg'
+    },
+    {
+      alt: 'img-17',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_17.jpg'
+    },
+    {
+      alt: 'img-18',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_18.jpg'
+    },
+    {
+      alt: 'img-19',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_19.jpg'
+    },
+    {
+      alt: 'img-20',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_20.jpg'
+    },
+    {
+      alt: 'img-21',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_21.jpg'
+    },
+    {
+      alt: 'img-22',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_22.jpg'
+    },
+    {
+      alt: 'img-23',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_23.jpg'
+    },
+    {
+      alt: 'img-24',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_24.jpg'
+    },
+    {
+      alt: 'img-25',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_25.jpg'
+    },
+    {
+      alt: 'img-26',
+      src: '/imgs/recuerdos/fiestas_tematicas/img_26.jpg'
     }
   ]
 
@@ -178,7 +225,7 @@ export default function Parties() {
         </BoxStyled> */}
       </Box>
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <MemoriesOne title='Recuerdos' imgs={imgs2} />
+        <MemoriesOne title='Recuerdos' imgs={imgs3} />
       </BoxStyled>
       <ServicesOne />
     </main>

@@ -66,38 +66,6 @@ export default function Parties() {
     {
       alt: 'img-10',
       src: '/imgs/recuerdos/paseos/img_10.jpg'
-    },
-    {
-      alt: 'img-11',
-      src: '/imgs/recuerdos/paseos/img_11.jpg'
-    },
-    {
-      alt: 'img-12',
-      src: '/imgs/recuerdos/paseos/img_12.jpg'
-    },
-    {
-      alt: 'img-13',
-      src: '/imgs/recuerdos/paseos/img_13.jpg'
-    },
-    {
-      alt: 'img-14',
-      src: '/imgs/recuerdos/paseos/img_14.jpg'
-    },
-    {
-      alt: 'img-15',
-      src: '/imgs/recuerdos/paseos/img_15.jpg'
-    },
-    {
-      alt: 'img-16',
-      src: '/imgs/recuerdos/paseos/img_16.jpg'
-    },
-    {
-      alt: 'img-17',
-      src: '/imgs/recuerdos/paseos/img_17.jpg'
-    },
-    {
-      alt: 'img-18',
-      src: '/imgs/recuerdos/paseos/img_18.jpg'
     }
   ]
 
@@ -178,7 +146,6 @@ export default function Parties() {
       alt: 'img-19',
       src: '/imgs/recuerdos/paseos/img_19.jpg'
     },
-
     {
       alt: 'img-20',
       src: '/imgs/recuerdos/paseos/img_20.jpg'
@@ -222,6 +189,42 @@ export default function Parties() {
     {
       alt: 'img-30',
       src: '/imgs/recuerdos/paseos/img_30.jpg'
+    },
+    {
+      alt: 'img-31',
+      src: '/imgs/recuerdos/paseos/img_31.jpg'
+    },
+    {
+      alt: 'img-32',
+      src: '/imgs/recuerdos/paseos/img_32.jpg'
+    },
+    {
+      alt: 'img-33',
+      src: '/imgs/recuerdos/paseos/img_33.jpg'
+    },
+    {
+      alt: 'img-34',
+      src: '/imgs/recuerdos/paseos/img_34.jpg'
+    },
+    {
+      alt: 'img-35',
+      src: '/imgs/recuerdos/paseos/img_35.jpg'
+    },
+    {
+      alt: 'img-36',
+      src: '/imgs/recuerdos/paseos/img_36.jpg'
+    },
+    {
+      alt: 'img-37',
+      src: '/imgs/recuerdos/paseos/img_37.jpg'
+    },
+    {
+      alt: 'img-38',
+      src: '/imgs/recuerdos/paseos/img_38.jpg'
+    },
+    {
+      alt: 'img-39',
+      src: '/imgs/recuerdos/paseos/img_39.jpg'
     }
   ]
 

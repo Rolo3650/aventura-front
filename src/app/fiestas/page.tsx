@@ -94,6 +94,49 @@ export default function Parties() {
     }
   ]
 
+  const imgs3: Img[] = [
+    {
+      alt: 'img-8',
+      src: '/imgs/recuerdos/fiestas/img_8.jpg'
+    },
+    {
+      alt: 'img-9',
+      src: '/imgs/recuerdos/fiestas/img_9.jpg'
+    },
+    {
+      alt: 'img-10',
+      src: '/imgs/recuerdos/fiestas/img_10.jpg'
+    },
+    {
+      alt: 'img-11',
+      src: '/imgs/recuerdos/fiestas/img_11.jpg'
+    },
+    {
+      alt: 'img-12',
+      src: '/imgs/recuerdos/fiestas/img_12.jpg'
+    },
+    {
+      alt: 'img-13',
+      src: '/imgs/recuerdos/fiestas/img_13.jpg'
+    },
+    {
+      alt: 'img-14',
+      src: '/imgs/recuerdos/fiestas/img_14.jpg'
+    },
+    {
+      alt: 'img-14',
+      src: '/imgs/recuerdos/fiestas/img_14.jpg'
+    },
+    {
+      alt: 'img-15',
+      src: '/imgs/recuerdos/fiestas/img_15.jpg'
+    },
+    {
+      alt: 'img-16',
+      src: '/imgs/recuerdos/fiestas/img_16.jpg'
+    },
+  ]
+
   return (
     <main>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
@@ -146,7 +189,7 @@ export default function Parties() {
         </BoxStyled> */}
       </Box>
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <MemoriesOne title='Recuerdos' imgs={imgs2} />
+        <MemoriesOne title='Recuerdos' imgs={imgs3} />
       </BoxStyled>
       <ServicesOne />
     </main>

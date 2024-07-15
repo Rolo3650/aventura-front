@@ -39,10 +39,6 @@ export default function Parties() {
   ]
 
   const imgs2: Img[] = [
-    // {
-    //   alt: 'img-1',
-    //   src: '/imgs/recuerdos/campamentos_aventura/img_1.jpg'
-    // },
     {
       alt: 'img-2',
       src: '/imgs/recuerdos/campamentos_aventura/img_2.jpg'
@@ -50,6 +46,97 @@ export default function Parties() {
     {
       alt: 'img-3',
       src: '/imgs/recuerdos/campamentos_aventura/img_3.jpg'
+    },
+    {
+      alt: 'img-4',
+      src: '/imgs/recuerdos/campamentos_aventura/img_4.jpg'
+    },
+    {
+      alt: 'img-5',
+      src: '/imgs/recuerdos/campamentos_aventura/img_5.jpg'
+    },
+    {
+      alt: 'img-6',
+      src: '/imgs/recuerdos/campamentos_aventura/img_6.jpg'
+    },
+    {
+      alt: 'img-7',
+      src: '/imgs/recuerdos/campamentos_aventura/img_7.jpg'
+    },
+    {
+      alt: 'img-8',
+      src: '/imgs/recuerdos/campamentos_aventura/img_8.jpg'
+    },
+    {
+      alt: 'img-9',
+      src: '/imgs/recuerdos/campamentos_aventura/img_9.jpg'
+    },
+    {
+      alt: 'img-10',
+      src: '/imgs/recuerdos/campamentos_aventura/img_10.jpg'
+    },
+    {
+      alt: 'img-11',
+      src: '/imgs/recuerdos/campamentos_aventura/img_11.jpg'
+    },
+  ]
+
+  const imgs3: Img[] = [
+    {
+      alt: 'img-12',
+      src: '/imgs/recuerdos/campamentos_aventura/img_12.jpg'
+    },
+    {
+      alt: 'img-13',
+      src: '/imgs/recuerdos/campamentos_aventura/img_13.jpg'
+    },
+    {
+      alt: 'img-14',
+      src: '/imgs/recuerdos/campamentos_aventura/img_14.jpg'
+    },
+    {
+      alt: 'img-15',
+      src: '/imgs/recuerdos/campamentos_aventura/img_15.jpg'
+    },
+    {
+      alt: 'img-16',
+      src: '/imgs/recuerdos/campamentos_aventura/img_16.jpg'
+    },
+    {
+      alt: 'img-17',
+      src: '/imgs/recuerdos/campamentos_aventura/img_17.jpg'
+    },
+    {
+      alt: 'img-18',
+      src: '/imgs/recuerdos/campamentos_aventura/img_18.jpg'
+    },
+    {
+      alt: 'img-19',
+      src: '/imgs/recuerdos/campamentos_aventura/img_19.jpg'
+    },
+    {
+      alt: 'img-20',
+      src: '/imgs/recuerdos/campamentos_aventura/img_20.jpg'
+    },
+    {
+      alt: 'img-21',
+      src: '/imgs/recuerdos/campamentos_aventura/img_21.jpg'
+    },
+    {
+      alt: 'img-22',
+      src: '/imgs/recuerdos/campamentos_aventura/img_22.jpg'
+    },
+    {
+      alt: 'img-23',
+      src: '/imgs/recuerdos/campamentos_aventura/img_23.jpg'
+    },
+    {
+      alt: 'img-24',
+      src: '/imgs/recuerdos/campamentos_aventura/img_24.jpg'
+    },
+    {
+      alt: 'img-25',
+      src: '/imgs/recuerdos/campamentos_aventura/img_25.jpg'
     },
   ]
 
@@ -129,7 +216,7 @@ export default function Parties() {
         <iframe src='/imgs/banners/campamentos_aventura/video_1.mp4' />
       </BoxVideo>
       <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <MemoriesOne title='Recuerdos' imgs={imgs2} />
+        <MemoriesOne title='Recuerdos' imgs={imgs3} />
       </BoxStyled>
       <ServicesOne />
     </main>
