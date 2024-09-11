@@ -94,7 +94,7 @@ const HeaderOne = () => {
               <img
                 style={{ cursor: 'pointer' }}
                 src={pathname.includes('Queretaro') ? '/imgs/logos/logo_2.png' : '/imgs/logos/logo_1.png'}
-                alt='logo-aventura'
+                alt='Aventura En tu Escuela'
                 className='logo'
                 onClick={() => {
                   router.push('/')

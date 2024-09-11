@@ -60,6 +60,17 @@ export default function Parties() {
     {
       alt: 'img-11',
       src: '/imgs/banners/fiestas/img_11.png'
+    },
+    {
+      alt: 'img-11',
+      src: '/imgs/banners/fiestas/img_11.jpg'
+    },
+    {
+      alt: 'img-12',
+      src: '/imgs/banners/fiestas/img_12.jpg'
+    },{
+      alt: 'img-13',
+      src: '/imgs/banners/fiestas/img_13.jpg'
     }
   ]
 
@@ -91,7 +102,7 @@ export default function Parties() {
     {
       alt: 'img-7',
       src: '/imgs/recuerdos/fiestas/img_7.jpg'
-    }
+    },
   ]
 
   const imgs3: Img[] = [

@@ -53,9 +53,20 @@ export default function Parties() {
       src: '/imgs/banners-queretaro/fiestas/img_10.jpg'
     },
     {
-      alt: 'img-13',
-      src: '/imgs/banners-queretaro/fiestas/img_13.jpg'
+      alt: 'img-15',
+      src: '/imgs/banners-queretaro/fiestas/img_15.jpg'
     },
+    {
+      alt: 'img-11',
+      src: '/imgs/banners/fiestas/img_11.jpg'
+    },
+    {
+      alt: 'img-12',
+      src: '/imgs/banners/fiestas/img_12.jpg'
+    },{
+      alt: 'img-13',
+      src: '/imgs/banners/fiestas/img_13.jpg'
+    }
   ]
 
   const imgs2: Img[] = [

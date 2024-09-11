@@ -52,7 +52,7 @@ const BoxItem = styled(Box)<BoxProps>(({ theme }) => ({
   }
 }))
 
-const MenuButton = styled(IconButton)<IconButtonProps>(({}) => ({
+const MenuButton = styled(IconButton)<IconButtonProps>(({ }) => ({
   ':hover': {
     transform: 'rotate(90deg)'
   },
@@ -84,7 +84,7 @@ const HeaderTwo = () => {
               <img
                 style={{ cursor: 'pointer' }}
                 src={'/imgs/logos/logo_1.png'}
-                alt='logo-aventura'
+                alt='Aventura En tu Escuela'
                 className='logo'
                 onClick={() => {
                   router.push('/')
