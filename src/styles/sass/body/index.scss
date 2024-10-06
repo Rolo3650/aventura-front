@@ -2,10 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #9cbedf;
-    // background-image: url('/imgs/backgrounds/bg_1.png');
+    background: linear-gradient(#C1C62E, #86AA3E), url('/imgs/backgrounds/geometric.png');
     background-size: auto;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-attachment: fixed;
+    background-blend-mode: overlay;
 }
