@@ -8,7 +8,7 @@ import { NavbarDesktopThree, NavbarDesktopFour } from '../navbar'
 const BoxHeader = styled(Box)<BoxProps>(({}) => ({
   height: '80px',
   width: '100%',
-  backgroundImage: 'url(/svgs/backgrounds/header_2.svg)',
+  backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
   backgroundSize: 'cover',
   backgroundRepeat: 'none',
   backgroundPosition: 'bottom',

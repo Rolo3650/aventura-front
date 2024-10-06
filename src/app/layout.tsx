@@ -3,7 +3,7 @@ import { HeaderThree, SuspendeButtons } from '@/components'
 import '@/styles/sass/index.scss'
 import { ThemeOne } from '@/layout'
 import 'react-photo-view/dist/react-photo-view.css'
-import { FooterOne } from '@/components/modules/footer'
+import { FooterTwo } from '@/components/modules/footer'
 import { Box } from '@mui/material'
 
 export const metadata: Metadata = {
@@ -24,12 +24,17 @@ export default function RootLayout({
           href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Jockey+One&display=swap'
           rel='stylesheet'
         />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          href='https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'
+          rel='stylesheet'
+        ></link>
       </head>
       <body>
         <ThemeOne>
           <HeaderThree />
           {children}
-          <FooterOne />
+          <FooterTwo />
         </ThemeOne>
         <SuspendeButtons />
         <Box
