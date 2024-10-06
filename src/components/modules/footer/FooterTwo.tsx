@@ -1,8 +1,9 @@
 'use client'
-import { Box, BoxProps } from '@mui/material'
+import { Box, BoxProps, Grid, Link, Typography } from '@mui/material'
 import { styled } from '@mui/system'
 import React from 'react'
 import { ContactInfoOne } from '../contactInfo'
+import { useRouter } from 'next/navigation'
 
 const FooterBox = styled(Box)<BoxProps>(({ theme }) => ({
   [theme.breakpoints.up('md')]: {
@@ -14,9 +15,25 @@ const FooterBox = styled(Box)<BoxProps>(({ theme }) => ({
 }))
 
 const FooterTwo = () => {
+  const router = useRouter()
+
   return (
     <FooterBox maxWidth={'1490px'} mx={'auto'}>
       <ContactInfoOne />
+      <Grid container mt={5} maxWidth={'1490px'}>
+        <Grid item xs={12} md={12} textAlign={'center'}>
+          <Link
+            onClick={() => {
+              router.push('/docs/Aviso.pdf')
+            }}
+            sx={{textDecorationColor: 'white'}}
+          >
+            <Typography variant='body2' color={'white'} fontSize={'25px'}>
+              Aviso de privacidad
+            </Typography>
+          </Link>
+        </Grid>
+      </Grid>
     </FooterBox>
   )
 }
