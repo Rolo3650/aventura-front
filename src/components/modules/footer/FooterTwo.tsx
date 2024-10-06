@@ -9,13 +9,13 @@ const FooterBox = styled(Box)<BoxProps>(({ theme }) => ({
     padding: '0 30px 100px'
   },
   [theme.breakpoints.down('md')]: {
-    padding: '0 15px 100px'
+    padding: '0 30px 100px'
   }
 }))
 
 const FooterTwo = () => {
   return (
-    <FooterBox maxWidth={'1490px'} mx={'auto'} >
+    <FooterBox maxWidth={'1490px'} mx={'auto'}>
       <ContactInfoOne />
     </FooterBox>
   )
