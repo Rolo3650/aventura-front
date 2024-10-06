@@ -83,7 +83,7 @@ const HeaderThree = () => {
               height={96}
             />
           </BoxIcon>
-          <BoxDesktop>
+          <BoxDesktop height={80}>
             {!pathname.includes('Queretaro') && <NavbarDesktopThree />}
             {pathname.includes('Queretaro') && <NavbarDesktopFour />}
           </BoxDesktop>
