@@ -1,5 +1,5 @@
 'use client'
-import { CarouselOne, ServicesOne } from '@/components'
+import { BannerOne, CarouselOne, ServicesOne } from '@/components'
 import { Img } from '@/core'
 import { Box, BoxProps, styled } from '@mui/material'
 
@@ -114,9 +114,7 @@ export default function Home() {
 
   return (
     <main>
-      <Box maxWidth={'1200px'} display={'flex'} justifyContent={'center'} m={'auto'} mb={3}>
-        <img src='/imgs/banners/curso/img_1.jpg' alt='img-curso' className='w-100' />
-      </Box>
+      <BannerOne img='/svgs/backgrounds/banner-1.svg'/>
       <BoxStyled maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
         <CarouselOne imgs={imgs} />
         <br />
