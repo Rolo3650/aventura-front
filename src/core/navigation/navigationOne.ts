@@ -4,12 +4,14 @@ const navigationConfig: NavigationItem[] = [
   {
     label: 'Fiestas',
     breackpoint: 'md',
-    route: '/fiestas'
+    route: '/fiestas',
+    icon: '/svgs/icons/gift-brown-1.svg',
   },
   {
     label: 'Eventos Escolares',
     breackpoint: 'md',
     route: '/eventos-escolares',
+    icon: '/svgs/icons/explorator-brown-1.svg',
     items: [
       {
         label: 'Paseos o visitas escolares',
@@ -32,6 +34,7 @@ const navigationConfig: NavigationItem[] = [
     label: 'Eventos de Temporada',
     breackpoint: 'md',
     route: '/eventos-de-temporada',
+    icon: '/svgs/icons/calendar-brown-1.svg',
     items: [
       {
         label: 'Curso de Verano',
@@ -49,6 +52,7 @@ const navigationConfig: NavigationItem[] = [
     label: 'Campamentos',
     breackpoint: 'lg',
     route: '/campamentos',
+    icon: '/svgs/icons/camp-tent-brown-1.svg',
     items: [
       {
         label: 'Campamentos Aventura',
@@ -64,6 +68,7 @@ const navigationConfig: NavigationItem[] = [
   },
   {
     label: 'Nosotros',
+    icon: '/svgs/icons/tree-brown-1.svg',
     breackpoint: 'md',
     route: '/nosotros'
   },

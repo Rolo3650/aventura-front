@@ -3,7 +3,7 @@ import { Box, BoxProps, Drawer, IconButton, IconButtonProps, styled } from '@mui
 import Image from 'next/image'
 import { usePathname, useRouter } from 'next/navigation'
 import React from 'react'
-import { NavbarDesktopThree, NavbarDesktopFour } from '../navbar'
+import { NavbarDesktopThree, NavbarDesktopFour, NavbarPhoneThree, NavbarPhoneFour } from '../navbar'
 
 const BoxHeader = styled(Box)<BoxProps>(({}) => ({
   height: '80px',
@@ -135,7 +135,8 @@ const HeaderThree = () => {
         open={open}
         onClose={toggleDrawer(false)}
       >
-        Hola
+        {!pathname.includes('Queretaro') && <NavbarPhoneThree />}
+        {pathname.includes('Queretaro') && <NavbarPhoneFour />}
       </Drawer>
     </BoxHeader>
   )

@@ -1,6 +1,6 @@
 'use client'
 import { MenuThree } from '@/components/inputs'
-import { navigationConfig } from '@/core'
+import { navigationConfigQueretaro } from '@/core'
 import { Box, Breakpoint, Button, ButtonProps, Typography, styled } from '@mui/material'
 import { useRouter } from 'next/navigation'
 import React from 'react'
@@ -24,7 +24,7 @@ const NavbarDesktopFour = () => {
 
   return (
     <Box display={'flex'} alignItems={'center'} height={'100%'}>
-      {navigationConfig.map((nav, index) => {
+      {navigationConfigQueretaro.map((nav, index) => {
         if (!nav.items) {
           return (
             <ButtonStyled

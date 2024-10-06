@@ -33,7 +33,8 @@ const theme = createTheme({
     },
     h6: {
       fontFamily: 'Jockey One, sans-serif',
-      fontWeight: 400
+      fontWeight: 400,
+      color: '#935B1F'
     },
     body1: {
       fontFamily: 'Inter, sans-serif',

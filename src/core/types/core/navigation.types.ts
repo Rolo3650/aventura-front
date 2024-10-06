@@ -5,6 +5,7 @@ interface NavigationItem {
   route: string
   breackpoint: Breakpoint
   items?: NavigationItem[]
+  icon?: string
 }
 
 export type { NavigationItem }
