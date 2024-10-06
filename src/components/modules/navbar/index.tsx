@@ -1,4 +1,6 @@
 export * from './NavbarDesktopOne'
 export * from './NavbarDesktopTwo'
+export * from './NavbarDesktopThree'
+export * from './NavbarDesktopFour'
 export * from './NavbarPhoneOne'
 export * from './NavbarPhoneTwo'

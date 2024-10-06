@@ -1,5 +1,6 @@
 'use client'
-import { Box, Link } from '@mui/material'
+import { Box } from '@mui/material'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 

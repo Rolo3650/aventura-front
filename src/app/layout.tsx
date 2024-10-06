@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { HeaderOne, SuspendeButtons } from '@/components'
+import { HeaderThree, SuspendeButtons } from '@/components'
 import '@/styles/sass/index.scss'
 import { ThemeOne } from '@/layout'
 import 'react-photo-view/dist/react-photo-view.css'
@@ -16,16 +16,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-
   return (
     <html lang='en'>
+      <head>
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Jockey+One&display=swap'
+          rel='stylesheet'
+        />
+      </head>
       <body>
         <ThemeOne>
-          <HeaderOne />
+          <HeaderThree />
           {children}
           <FooterOne />
         </ThemeOne>
-        <SuspendeButtons />F
+        <SuspendeButtons />
         <Box
           sx={{
             '& img': {
@@ -44,7 +50,7 @@ export default function RootLayout({
             }
           }}
         >
-          <a href="https://www.facebook.com/AventuraentuEscuela?mibextid=LQQJ4d" target='_blank'>
+          <a href='https://www.facebook.com/AventuraentuEscuela?mibextid=LQQJ4d' target='_blank'>
             <img src='https://img.icons8.com/?size=100&id=118497&format=png&color=000000' alt='whats-icon' />
           </a>
         </Box>
