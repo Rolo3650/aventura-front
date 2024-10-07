@@ -1,5 +1,5 @@
 'use client'
-import { BannerOne, CarouselTwo, ServicesOne } from '@/components'
+import { BannerOne, CarouselTwo, ServicesOne, VideoOne } from '@/components'
 import { Img } from '@/core'
 import { Box, BoxProps, styled } from '@mui/material'
 
@@ -9,22 +9,6 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
   },
   [theme.breakpoints.down('sm')]: {
     maxHeight: '100vh'
-  }
-}))
-
-const BoxVideo = styled(Box)<BoxProps>(({ theme }) => ({
-  [theme.breakpoints.up('md')]: {
-    '& iframe': {
-      width: '900px',
-      height: '500px'
-    }
-  },
-  [theme.breakpoints.down('sm')]: {
-    maxHeight: '100vh',
-    '& iframe': {
-      width: '320px',
-      height: '200px'
-    }
   }
 }))
 
@@ -117,17 +101,8 @@ export default function Home() {
       <BannerOne img='/svgs/backgrounds/banner-1.svg' />
       <BoxStyled maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
         <CarouselTwo imgs={imgs} title='Nuestros cursos' />
-        <br />
-        {/* <BoxStyled paddingLeft={'60px'}>
-          <Typography variant='h2' fontWeight={600}>
-            Últimas Noticias
-          </Typography>
-        </BoxStyled> */}
       </BoxStyled>
-      <br />
-      <BoxVideo textAlign={'center'}>
-        <iframe src='/imgs/banners/campamentos/Video Camp Villa victoria.mp4' />
-      </BoxVideo>
+      <VideoOne video='/imgs/banners/campamentos/Video Camp Villa victoria.mp4' />
       <br />
       <ServicesOne />
     </main>

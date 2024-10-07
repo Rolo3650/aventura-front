@@ -26,7 +26,7 @@ const GridContainer = styled(Grid)<GridProps>(({ theme }) => ({
 }))
 
 const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
-  boxShadow: '4px 8px 4px 0 rgba(0,0,0,0.25)',
+  boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
   backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
   backgroundSize: 'cover',
   backgroundRepeat: 'none',

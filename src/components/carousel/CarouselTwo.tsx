@@ -19,12 +19,12 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
   padding: '0 30px',
   [theme.breakpoints.up('md')]: {
     '& img': {
-      maxHeight: '600px'
+      height: '400px'
     }
   },
-  [theme.breakpoints.down('sm')]: {
+  [theme.breakpoints.down('md')]: {
     '& img': {
-      maxHeight: '300px'
+      height: '320px'
     }
   }
 }))
@@ -42,9 +42,9 @@ const CarouselTwo: React.FC<Props> = ({ imgs, title }) => {
         <Box
           className='scroll-container'
           display={'flex'}
-          height={'420px'}
           sx={{
             overflowX: 'scroll',
+            paddingBottom: '10px',
             overflowY: 'hidden'
           }}
         >
@@ -55,7 +55,6 @@ const CarouselTwo: React.FC<Props> = ({ imgs, title }) => {
                   src={img.src}
                   alt={img.alt}
                   style={{
-                    height: '400px',
                     borderRadius: '8px',
                     boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)'
                   }}
