@@ -1,1 +1,2 @@
-export * from "./CarouselOne"
+export * from './CarouselOne'
+export * from './CarouselTwo'

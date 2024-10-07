@@ -1,5 +1,5 @@
 'use client'
-import { BannerOne, CarouselOne, ServicesOne } from '@/components'
+import { BannerOne, CarouselTwo, ServicesOne } from '@/components'
 import { Img } from '@/core'
 import { Box, BoxProps, styled } from '@mui/material'
 
@@ -114,9 +114,9 @@ export default function Home() {
 
   return (
     <main>
-      <BannerOne img='/svgs/backgrounds/banner-1.svg'/>
+      <BannerOne img='/svgs/backgrounds/banner-1.svg' />
       <BoxStyled maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselOne imgs={imgs} />
+        <CarouselTwo imgs={imgs} title='Nuestros cursos' />
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
