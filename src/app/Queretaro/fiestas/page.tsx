@@ -1,16 +1,40 @@
 'use client'
-import { CarouselFour, CarouselThree, MemoriesOne, ServicesOne, TitleOne } from '@/components'
+import { CarouselFour, CarouselThree,  ServicesOne, } from '@/components'
 import { Img } from '@/core'
-import { Box, Typography, BoxProps, styled } from '@mui/material'
+import { Box, Typography, BoxProps, styled, Grid,  GridProps } from '@mui/material'
 
-const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
+const BoxStyled = styled(Box)<BoxProps>(({}) => ({
+  padding: '0 30px',
+  position: 'relative'
+}))
+
+const BoxBackground = styled(Box)<BoxProps>(({ theme }) => ({
+  borderRadius: '4px',
+  bottom: 0,
+  right: '30px',
+  width: '80%',
+  height: '100%',
+  backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+  backgroundSize: 'contain',
+  backgroundPosition: 'center',
+  boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
   [theme.breakpoints.up('md')]: {
-    paddingLeft: '60px',
-    paddingRight: '60px'
+    position: 'absolute'
   },
   [theme.breakpoints.down('md')]: {
-    paddingLeft: '30px',
-    paddingRight: '30px'
+    display: 'none'
+  }
+}))
+
+const GridBottom = styled(Grid)<GridProps>(({ theme }) => ({
+  '&.bottom': {
+    [theme.breakpoints.down('md')]: {
+      padding: '50px 30px',
+      backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+      backgroundSize: 'contain',
+      backgroundPosition: 'center',
+      boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)'
+    }
   }
 }))
 
@@ -102,8 +126,8 @@ export default function Parties() {
 
   return (
     <main>
-      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselThree imgs={imgs2} title='Paquetes'/>
+      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'} pt={3}>
+        <CarouselThree imgs={imgs} title='Paquetes'/>
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -111,39 +135,65 @@ export default function Parties() {
           </Typography>
         </BoxStyled> */}
       </Box>
-      <TitleOne text='Fiestas' />
-      <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
-          <br />
-          <br />
-          ¿Quieres una fiesta diferente y única? 🥳
-          <br />
-          <br />
-          Te ofrecemos nuestras  FIESTAS DE AVENTURA en las que llevamos toda la diversión y la AVENTURA hasta ti.  🏡🏘
-          <br />
-          <br />
-          Contamos con paquetes desde 5 niños y muchísimas actividades que harán que pases ¡un día lleno de diversión! 🌈🥳🤩  ¡Tenemos fiestas temáticas!
-          Mándanos un inbox si quieres mas información.... 📲
-          <br />
-          {/* <br />
-          Nuestros servicios de fiestas están diseñados para ofrecer una experiencia única y memorable para los
-          estudiantes de tu escuela. Con una combinación perfecta de actividades recreativas, juegos emocionantes y
-          desafíos divertidos, nos aseguramos de que cada evento sea una aventura inolvidable.
-          <br />
-          <br />
-          Desde emocionantes juegos de equipo hasta actividades creativas, nuestras fiestas promueven la sana diversión
-          mientras fomentan valores importantes como el trabajo en equipo, la autoestima y la independencia. Además,
-          nuestro dedicado staff está comprometido con la seguridad de todos los participantes, garantizando que cada
-          momento sea seguro y lleno de diversión.
-          <br /> */}
-          <br />
-          <br />
-        </Typography>
+      <BoxStyled maxWidth={'1400px'} mx={'auto'}>
+        <BoxBackground />
+        <Grid
+          container
+          sx={{
+            position: 'relative',
+            zIndex: 1
+          }}
+        >
+          <Grid
+            item
+            md={3}
+            xs={12}
+            py={'60px'}
+            px={'30px'}
+            sx={{
+              '& img': {
+                width: '100%',
+                boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
+                borderRadius: '8px',
+                transform: 'rotate(+5deg)'
+              }
+            }}
+          >
+            <img src="/imgs/recuerdos/fiestas/img_14.jpg" alt="img" />
+          </Grid>
+          <GridBottom item md={8} py={'60px'} xs={12} className='bottom'>
+            <Typography variant='h5'>Fiestas</Typography>
+            <Typography variant='body1' textAlign={'justify'} mt={2}>
+            ¿Quieres una fiesta diferente y única? 🥳
+            <br />
+            <br />
+            Te ofrecemos nuestras  FIESTAS DE AVENTURA en las que llevamos toda la diversión y la AVENTURA hasta ti.  🏡🏘
+            <br />
+            <br />
+            Contamos con paquetes desde 5 niños y muchísimas actividades que harán que pases ¡un día lleno de diversión! 🌈🥳🤩  ¡Tenemos fiestas temáticas!
+            Mándanos un inbox si quieres mas información.... 📲
+            </Typography>
+            {/* <Box mt={3} textAlign={'center'}>
+              <Button
+                variant='contained'
+                sx={{
+                  background: '#9943A1',
+                  textTransform: 'none',
+                  color: 'white'
+                }}
+              >
+                <Typography variant='h5' color={'inherit'} px={3}>
+                  Ver más...
+                </Typography>
+              </Button>
+            </Box> */}
+          </GridBottom>
+        </Grid>
       </BoxStyled>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <TitleOne text='Paquetes' />
+        {/* <TitleOne text='Paquetes' /> */}
         <br />
-        <CarouselFour imgs={imgs} />
+        <CarouselFour imgs={imgs2} title='Recuerdos'/>
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -151,9 +201,9 @@ export default function Parties() {
           </Typography>
         </BoxStyled> */}
       </Box>
-      <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <MemoriesOne title='Recuerdos' imgs={imgs2} />
-      </BoxStyled>
+      {/* <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
+        <MemoriesOne title='Recuerdos' imgs={imgs3} />
+      </BoxStyled> */}
       <ServicesOne />
     </main>
   )
