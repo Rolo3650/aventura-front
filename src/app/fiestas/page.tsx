@@ -127,10 +127,6 @@ export default function Parties() {
       alt: 'img-7',
       src: '/imgs/recuerdos/fiestas/img_7.jpg'
     },
-  ]
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const imgs3: Img[] = [
     {
       alt: 'img-8',
       src: '/imgs/recuerdos/fiestas/img_8.jpg'
@@ -185,60 +181,60 @@ export default function Parties() {
         </BoxStyled> */}
       </Box>
       <BoxStyled maxWidth={'1400px'} mx={'auto'}>
-      <BoxBackground />
-      <Grid
-        container
-        sx={{
-          position: 'relative',
-          zIndex: 1
-        }}
-      >
+        <BoxBackground />
         <Grid
-          item
-          md={3}
-          xs={12}
-          py={'60px'}
-          px={'30px'}
+          container
           sx={{
-            '& img': {
-              width: '100%',
-              boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
-              borderRadius: '8px',
-              transform: 'rotate(+5deg)'
-            }
+            position: 'relative',
+            zIndex: 1
           }}
         >
-          <img src="/imgs/recuerdos/fiestas/img_16.jpg" alt="img" />
+          <Grid
+            item
+            md={3}
+            xs={12}
+            py={'60px'}
+            px={'30px'}
+            sx={{
+              '& img': {
+                width: '100%',
+                boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
+                borderRadius: '8px',
+                transform: 'rotate(+5deg)'
+              }
+            }}
+          >
+            <img src="/imgs/recuerdos/fiestas/img_16.jpg" alt="img" />
+          </Grid>
+          <GridBottom item md={8} py={'60px'} xs={12} className='bottom'>
+            <Typography variant='h5'>Fiestas</Typography>
+            <Typography variant='body1' textAlign={'justify'} mt={2}>
+            ¿Quieres una fiesta diferente y única? 🥳
+            <br />
+            <br />
+            Te ofrecemos nuestras  FIESTAS DE AVENTURA en las que llevamos toda la diversión y la AVENTURA hasta ti.  🏡🏘
+            <br />
+            <br />
+            Contamos con paquetes desde 5 niños y muchísimas actividades que harán que pases ¡un día lleno de diversión! 🌈🥳🤩  ¡Tenemos fiestas temáticas!
+            Mándanos un inbox si quieres mas información.... 📲
+            </Typography>
+            {/* <Box mt={3} textAlign={'center'}>
+              <Button
+                variant='contained'
+                sx={{
+                  background: '#9943A1',
+                  textTransform: 'none',
+                  color: 'white'
+                }}
+              >
+                <Typography variant='h5' color={'inherit'} px={3}>
+                  Ver más...
+                </Typography>
+              </Button>
+            </Box> */}
+          </GridBottom>
         </Grid>
-        <GridBottom item md={8} py={'60px'} xs={12} className='bottom'>
-          <Typography variant='h5'>Fiestas</Typography>
-          <Typography variant='body1' textAlign={'justify'} mt={2}>
-          ¿Quieres una fiesta diferente y única? 🥳
-          <br />
-          <br />
-          Te ofrecemos nuestras  FIESTAS DE AVENTURA en las que llevamos toda la diversión y la AVENTURA hasta ti.  🏡🏘
-          <br />
-          <br />
-          Contamos con paquetes desde 5 niños y muchísimas actividades que harán que pases ¡un día lleno de diversión! 🌈🥳🤩  ¡Tenemos fiestas temáticas!
-          Mándanos un inbox si quieres mas información.... 📲
-          </Typography>
-          {/* <Box mt={3} textAlign={'center'}>
-            <Button
-              variant='contained'
-              sx={{
-                background: '#9943A1',
-                textTransform: 'none',
-                color: 'white'
-              }}
-            >
-              <Typography variant='h5' color={'inherit'} px={3}>
-                Ver más...
-              </Typography>
-            </Button>
-          </Box> */}
-        </GridBottom>
-      </Grid>
-    </BoxStyled>
+      </BoxStyled>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
         {/* <TitleOne text='Paquetes' /> */}
         <br />

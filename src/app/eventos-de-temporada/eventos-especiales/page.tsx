@@ -1,15 +1,38 @@
 'use client'
-import { ServicesOne, TitleOne } from '@/components'
-import { Box, Typography, BoxProps, styled } from '@mui/material'
+import { ServicesOne } from '@/components'
+import { Box, Typography, BoxProps, styled, Grid, GridProps } from '@mui/material'
 
-const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
+const BoxStyled = styled(Box)<BoxProps>(({}) => ({
+  padding: '0 30px',
+  position: 'relative'
+}))
+
+const BoxBackground = styled(Box)<BoxProps>(({ theme }) => ({
+  borderRadius: '4px',
+  bottom: 0,
+  width: '100%',
+  height: '100%',
+  backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+  backgroundSize: 'contain',
+  backgroundPosition: 'center',
+  boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
   [theme.breakpoints.up('md')]: {
-    paddingLeft: '60px',
-    paddingRight: '60px'
+    position: 'absolute'
   },
   [theme.breakpoints.down('md')]: {
-    paddingLeft: '30px',
-    paddingRight: '30px'
+    display: 'none'
+  }
+}))
+
+const GridBottom = styled(Grid)<GridProps>(({ theme }) => ({
+  '&.bottom': {
+    [theme.breakpoints.down('md')]: {
+      padding: '50px 30px',
+      backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+      backgroundSize: 'contain',
+      backgroundPosition: 'center',
+      boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)'
+    }
   }
 }))
 
@@ -101,41 +124,36 @@ export default function Parties() {
         <CarouselOne imgs={imgs2} />
         <br />
       </Box> */}
-      <TitleOne text='Eventos Especiales' />
-      <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
-          Eventos especiales
-          <br />
-          <br />
-          Atrévete a conocer nuestros eventos especiales de temporada donde podrás encontrar
-          <br />
-          <br />
-          <ul>
-            <li>
-              Septiembre: Mañanita Mexicana
-            </li>
-            <li>
-              Octubre y Noviembre: Halloween o Día de muertos
-            </li>
-            <li>
-              Diciembre: Posadas
-            </li>
-            <li>
-              Febrero: San Valentín
-            </li>
-            <li>
-              Marzo: Día de la Primavera
-            </li>
-            <li>
-              Abril: Día del Niño
-            </li>
-            <li>
-              Mayo: Día del estudiante
-            </li>
-          </ul>
-          <br />
-          <br />
-          {/* <Box display={'flex'} justifyContent={'center'} flex={'wrap'}>
+      <BoxStyled maxWidth={'1400px'} mx={'auto'} my={3}>
+        <BoxBackground />
+        <Grid
+          container
+          sx={{
+            position: 'relative',
+            zIndex: 1
+          }}
+        >
+          <GridBottom item md={12} p={'60px'} xs={12} className='bottom'>
+            <Typography variant='h5'>Eventos Especiales</Typography>
+            <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
+              Eventos especiales
+              <br />
+              <br />
+              Atrévete a conocer nuestros eventos especiales de temporada donde podrás encontrar
+              <br />
+              <br />
+              <ul>
+                <li>Septiembre: Mañanita Mexicana</li>
+                <li>Octubre y Noviembre: Halloween o Día de muertos</li>
+                <li>Diciembre: Posadas</li>
+                <li>Febrero: San Valentín</li>
+                <li>Marzo: Día de la Primavera</li>
+                <li>Abril: Día del Niño</li>
+                <li>Mayo: Día del estudiante</li>
+              </ul>
+              <br />
+              <br />
+              {/* <Box display={'flex'} justifyContent={'center'} flex={'wrap'}>
             <Box p={3}>
               <Button variant='contained' onClick={() => {
                 window.open('/docs/Info del curso.pdf', '_blank');
@@ -168,9 +186,11 @@ export default function Parties() {
               </Button>
             </Box>
           </Box> */}
-          <br />
-          <br />
-        </Typography>
+              <br />
+              <br />
+            </Typography>
+          </GridBottom>
+        </Grid>
       </BoxStyled>
       {/* <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
         <TitleOne text='Paquetes' />

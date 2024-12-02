@@ -1,31 +1,53 @@
 'use client'
-import { CarouselOne, MemoriesOne, ServicesOne, TitleOne } from '@/components'
+import { CarouselFour, CarouselThree, ServicesOne } from '@/components'
 import { Img } from '@/core'
-import { Box, Typography, BoxProps, styled } from '@mui/material'
+import { Box, Typography, BoxProps, styled, Grid, GridProps, TypographyProps } from '@mui/material'
 
-const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
+const TypographyStyled = styled(Typography)<TypographyProps>(({}) => ({
+  display: 'inline-block',
+  backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'none',
+  padding: '5px 30px',
+  transform: 'rotate(-5deg)',
+  borderRadius: '4px',
+  boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
+}))
+
+const BoxStyled = styled(Box)<BoxProps>(({}) => ({
+  padding: '0 30px',
+  position: 'relative'
+}))
+
+const BoxBackground = styled(Box)<BoxProps>(({ theme }) => ({
+  borderRadius: '4px',
+  bottom: 0,
+  left: '30px',
+  width: '66%',
+  height: '100%',
+  backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+  backgroundSize: 'contain',
+  backgroundPosition: 'center',
+  boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
   [theme.breakpoints.up('md')]: {
-    paddingLeft: '60px',
-    paddingRight: '60px'
+    position: 'absolute'
   },
   [theme.breakpoints.down('md')]: {
-    paddingLeft: '30px',
-    paddingRight: '30px'
+    display: 'none'
   }
 }))
 
-const BoxVideo = styled(Box)<BoxProps>(({ theme }) => ({
-  [theme.breakpoints.up('md')]: {
-    '& video': {
-      width: '900px',
-      height: '500px'
-    }
-  },
-  [theme.breakpoints.down('sm')]: {
-    maxHeight: '100vh',
-    '& video': {
-      width: '320px',
-      height: '200px'
+const GridBottom = styled(Grid)<GridProps>(({ theme }) => ({
+  '&.bottom': {
+    [theme.breakpoints.up('md')]: {
+      paddingLeft: '60px',
+    },
+    [theme.breakpoints.down('md')]: {
+      padding: '50px 30px',
+      backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+      backgroundSize: 'contain',
+      backgroundPosition: 'center',
+      boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)'
     }
   }
 }))
@@ -102,10 +124,7 @@ export default function Parties() {
     {
       alt: 'img-11',
       src: '/imgs/recuerdos/campamentos/img_11.jpg'
-    }
-  ]
-
-  const imgs3: Img[] = [
+    },
     {
       alt: 'img-11',
       src: '/imgs/recuerdos/campamentos/img_11.jpg'
@@ -350,8 +369,8 @@ export default function Parties() {
 
   return (
     <main>
-      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselOne imgs={imgs2} />
+      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'} pt={3}>
+        <CarouselThree imgs={imgs} title='Campamentos' />
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -359,55 +378,105 @@ export default function Parties() {
           </Typography>
         </BoxStyled> */}
       </Box>
-      <TitleOne text='Campamentos Externos' />
-      <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <Typography variant='body1' sx={{ textAlign: 'justify' }} paddingY={4} fontWeight={'bold'}>
-          Sumérgete en la naturaleza y vive una experiencia única en nuestros campamentos en nuestras diferentes sedes.
-          En Aventura en tu Escuela, creemos en la importancia de conectar con el entorno natural y fomentar el amor por
-          el medio ambiente, y nuestros campamentos son la manera perfecta de hacerlo.
-          <br />
-          <br />
-          Ubicados en entornos naturales impresionantes, nuestras sedes ofrecen el escenario perfecto para que los niños
-          y jóvenes disfruten de actividades al aire libre, aprendan sobre la sana covivencia y se sumerjan en la
-          aventura en un entorno seguro y fascinante.
-          <br />
-          <br />
-          Sedes:
-          <br />
-          <br />
-          <li>Rancho CDI - TPOZ (Tepotzotlan)</li>
-          <li>Finca Villa Victoria (EDO MEX)</li>
-          <li>Club Dorados (Oaxtepec)</li>
-          <li>Eco Alberto (Hidalgo)</li>
-          <li>Rancho Abekany (Tepotzotlan)</li>
-          <li>Rancho Diego (Morelos)</li>
-          <li>Malinalco Camper Club (EDO MEX)</li>
-          <li>Rancho Aventura (EDO MEX)</li>
-          <br />
-          <br />
-          Incluye:
-          <br />
-          <br />
-          <li>Alimentos (desayuno, comida y cena) 4 o 7 alimentos abundantes</li>
-          <li>Trasnporte</li>
-          <li>Hospedaje</li>
-          <li>Fogata</li>
-          <li>Playera</li>
-          <li>Alberca</li>
-          <li>Noche disco</li>
-          <li>Lluvia de Estrellas</li>
-          <li>Staff capacitado, 1 explorador por cada 10 alumnos</li>
-          <li>Actividades recreativas</li>
-          <li>Seguro contra accidentes (hasta $ 100,000.00)</li>
-          <li>Servicio médico</li>
-          <li>Galería de fotos mediante el grupo WhatsApp</li>
-          <li>Programa de actividades, recreativas y campismo</li>
-        </Typography>
+      <BoxStyled maxWidth={'1400px'} mx={'auto'}>
+        <BoxBackground />
+        <Grid
+          container
+          sx={{
+            position: 'relative',
+            zIndex: 1
+          }}
+        >
+          <GridBottom item md={6} py={'60px'} xs={12} className='bottom'>
+            <Typography variant='h5'>Campamentos Externos</Typography>
+            <Typography variant='body1' sx={{ textAlign: 'justify' }} paddingY={4} fontWeight={'bold'}>
+              Sumérgete en la naturaleza y vive una experiencia única en nuestros campamentos en nuestras diferentes sedes.
+              En Aventura en tu Escuela, creemos en la importancia de conectar con el entorno natural y fomentar el amor por
+              el medio ambiente, y nuestros campamentos son la manera perfecta de hacerlo.
+              <br />
+              <br />
+              Ubicados en entornos naturales impresionantes, nuestras sedes ofrecen el escenario perfecto para que los niños
+              y jóvenes disfruten de actividades al aire libre, aprendan sobre la sana covivencia y se sumerjan en la
+              aventura en un entorno seguro y fascinante.
+              <br />
+              <br />
+              Sedes:
+              <br />
+              <br />
+              <li>Rancho CDI - TPOZ (Tepotzotlan)</li>
+              <li>Finca Villa Victoria (EDO MEX)</li>
+              <li>Club Dorados (Oaxtepec)</li>
+              <li>Eco Alberto (Hidalgo)</li>
+              <li>Rancho Abekany (Tepotzotlan)</li>
+              <li>Rancho Diego (Morelos)</li>
+              <li>Malinalco Camper Club (EDO MEX)</li>
+              <li>Rancho Aventura (EDO MEX)</li>
+              <br />
+              <br />
+              Incluye:
+              <br />
+              <br />
+              <ul>
+                <li>Alimentos (desayuno, comida y cena) 4 o 7 alimentos abundantes</li>
+                <li>Trasnporte</li>
+                <li>Hospedaje</li>
+                <li>Fogata</li>
+                <li>Playera</li>
+                <li>Alberca</li>
+                <li>Noche disco</li>
+                <li>Lluvia de Estrellas</li>
+                <li>Staff capacitado, 1 explorador por cada 10 alumnos</li>
+                <li>Actividades recreativas</li>
+                <li>Seguro contra accidentes (hasta $ 100,000.00)</li>
+                <li>Servicio médico</li>
+                <li>Galería de fotos mediante el grupo WhatsApp</li>
+                <li>Programa de actividades, recreativas y campismo</li>
+              </ul>
+            </Typography>
+
+            {/* <Box mt={3} textAlign={'center'}>
+              <Button
+                variant='contained'
+                sx={{
+                  background: '#9943A1',
+                  textTransform: 'none',
+                  color: 'white'
+                }}
+              >
+                <Typography variant='h5' color={'inherit'} px={3}>
+                  Ver más...
+                </Typography>
+              </Button>
+            </Box> */}
+          </GridBottom>
+          <Grid
+            item
+            md={6}
+            xs={12}
+            py={'60px'}
+            px={'30px'}
+            sx={{
+              '& video': {
+                width: '100%',
+                boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
+                borderRadius: '8px',
+
+                // transform: 'rotate(+5deg)'
+              }
+            }}
+          >
+            <TypographyStyled variant='h5'>Finca Villa Victoria (EDO MEX)</TypographyStyled>
+            <video src='/imgs/banners/campamentos/Video Camp Villa victoria.mp4' autoPlay={true} controls={true}/>
+            <TypographyStyled variant='h5'>Rancho Abekany (Tepotzotlan)</TypographyStyled>
+            <video src='/imgs/banners/campamentos/video_1.mp4' autoPlay={false} controls={true}/>
+            <TypographyStyled variant='h5'>CDI (Tepotzotlan)</TypographyStyled>
+            <video src='/imgs/banners/campamentos/video_2.mp4' autoPlay={false} controls={true}/>
+          </Grid>
+        </Grid>
       </BoxStyled>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <TitleOne text='Paquetes' />
         <br />
-        <CarouselOne imgs={imgs} />
+        <CarouselFour imgs={imgs2} title='Recuerdos' />
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -415,28 +484,6 @@ export default function Parties() {
           </Typography>
         </BoxStyled> */}
       </Box>
-      <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <MemoriesOne title='Recuerdos' imgs={imgs3} />
-      </BoxStyled>
-      <br />
-      <TitleOne text='Finca Villa Victoria (EDO MEX)' />
-      <br />
-      <BoxVideo textAlign={'center'}>
-        <video src='/imgs/banners/campamentos/Video Camp Villa victoria.mp4' autoPlay={false} controls />
-      </BoxVideo>
-      <br />
-      <br />
-      <TitleOne text='Rancho Abekany (Tepotzotlan)' />
-      <br />
-      <BoxVideo textAlign={'center'}>
-        <video src='/imgs/banners/campamentos/video_1.mp4' autoPlay={false} controls />
-      </BoxVideo>
-      <br />
-      <TitleOne text='CDI (Tepotzotlan)' />
-      <br />
-      <BoxVideo textAlign={'center'}>
-        <video src='/imgs/banners/campamentos/video_2.mp4' autoPlay={false} controls />
-      </BoxVideo>
       <ServicesOne />
     </main>
   )

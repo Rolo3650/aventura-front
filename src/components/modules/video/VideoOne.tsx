@@ -1,5 +1,5 @@
 'use client'
-import { Box, BoxProps, Button, Grid, GridProps, styled, Typography } from '@mui/material'
+import { Box, BoxProps,  Grid, GridProps, styled, Typography } from '@mui/material'
 import React from 'react'
 
 const BoxStyled = styled(Box)<BoxProps>(({}) => ({
@@ -87,7 +87,7 @@ const VideoOne = ({ video }: { video: string }) => {
             con el objetivo de mantener a niños y jóvenes alejados de conductas de riesgo, combinando la diversión y el
             aprendizaje en todo momento.
           </Typography>
-          <Box mt={3} textAlign={'center'}>
+          {/* <Box mt={3} textAlign={'center'}>
             <Button
               variant='contained'
               sx={{
@@ -100,7 +100,7 @@ const VideoOne = ({ video }: { video: string }) => {
                 Ver más...
               </Typography>
             </Button>
-          </Box>
+          </Box> */}
         </GridBottom>
       </Grid>
     </BoxStyled>

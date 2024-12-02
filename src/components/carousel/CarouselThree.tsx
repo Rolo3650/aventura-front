@@ -53,7 +53,9 @@ const CarouselThree: React.FC<Props> = ({ imgs, title }) => {
           sx={{
             overflowX: 'scroll',
             paddingBottom: '10px',
-            overflowY: 'hidden'
+            overflowY: 'hidden',
+            
+            // justifyContent: 'center'
           }}
         >
           {imgs.map(img => (
