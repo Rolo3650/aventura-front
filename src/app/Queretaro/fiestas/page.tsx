@@ -205,6 +205,7 @@ export default function Parties() {
         <MemoriesOne title='Recuerdos' imgs={imgs3} />
       </BoxStyled> */}
       <ServicesOne />
+      <br />
     </main>
   )
 }

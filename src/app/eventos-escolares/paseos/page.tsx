@@ -1,16 +1,40 @@
 'use client'
-import { CarouselOne, MemoriesOne, ServicesOne, TitleOne } from '@/components'
+import {CarouselFour,CarouselThree,  ServicesOne, } from '@/components'
 import { Img } from '@/core'
-import { Box, Typography, BoxProps, styled } from '@mui/material'
+import { Box, Typography, BoxProps, styled, Grid,  GridProps } from '@mui/material'
 
-const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
+const BoxStyled = styled(Box)<BoxProps>(({}) => ({
+  padding: '0 30px',
+  position: 'relative'
+}))
+
+const BoxBackground = styled(Box)<BoxProps>(({ theme }) => ({
+  borderRadius: '4px',
+  bottom: 0,
+  right: '30px',
+  width: '80%',
+  height: '95%',
+  backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+  backgroundSize: 'contain',
+  backgroundPosition: 'center',
+  boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
   [theme.breakpoints.up('md')]: {
-    paddingLeft: '60px',
-    paddingRight: '60px'
+    position: 'absolute'
   },
   [theme.breakpoints.down('md')]: {
-    paddingLeft: '30px',
-    paddingRight: '30px'
+    display: 'none'
+  }
+}))
+
+const GridBottom = styled(Grid)<GridProps>(({ theme }) => ({
+  '&.bottom': {
+    [theme.breakpoints.down('md')]: {
+      padding: '50px 30px',
+      backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+      backgroundSize: 'contain',
+      backgroundPosition: 'center',
+      boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)'
+    }
   }
 }))
 
@@ -27,49 +51,6 @@ export default function Parties() {
   ]
 
   const imgs2: Img[] = [
-    {
-      alt: 'img-1',
-      src: '/imgs/recuerdos/paseos/img_1.jpg'
-    },
-    {
-      alt: 'img-2',
-      src: '/imgs/recuerdos/paseos/img_2.jpg'
-    },
-    {
-      alt: 'img-3',
-      src: '/imgs/recuerdos/paseos/img_3.jpg'
-    },
-    {
-      alt: 'img-4',
-      src: '/imgs/recuerdos/paseos/img_4.jpg'
-    },
-    {
-      alt: 'img-5',
-      src: '/imgs/recuerdos/paseos/img_5.jpg'
-    },
-    {
-      alt: 'img-6',
-      src: '/imgs/recuerdos/paseos/img_6.jpg'
-    },
-    {
-      alt: 'img-7',
-      src: '/imgs/recuerdos/paseos/img_7.jpg'
-    },
-    {
-      alt: 'img-8',
-      src: '/imgs/recuerdos/paseos/img_8.jpg'
-    },
-    {
-      alt: 'img-9',
-      src: '/imgs/recuerdos/paseos/img_9.jpg'
-    },
-    {
-      alt: 'img-10',
-      src: '/imgs/recuerdos/paseos/img_10.jpg'
-    }
-  ]
-
-  const imgs3: Img[] = [
     {
       alt: 'img-1',
       src: '/imgs/recuerdos/paseos/img_1.jpg'
@@ -142,96 +123,14 @@ export default function Parties() {
       alt: 'img-18',
       src: '/imgs/recuerdos/paseos/img_18.jpg'
     },
-    {
-      alt: 'img-19',
-      src: '/imgs/recuerdos/paseos/img_19.jpg'
-    },
-    {
-      alt: 'img-20',
-      src: '/imgs/recuerdos/paseos/img_20.jpg'
-    },
-    {
-      alt: 'img-21',
-      src: '/imgs/recuerdos/paseos/img_21.jpg'
-    },
-    {
-      alt: 'img-22',
-      src: '/imgs/recuerdos/paseos/img_22.jpg'
-    },
-    {
-      alt: 'img-23',
-      src: '/imgs/recuerdos/paseos/img_23.jpg'
-    },
-    {
-      alt: 'img-24',
-      src: '/imgs/recuerdos/paseos/img_24.jpg'
-    },
-    {
-      alt: 'img-25',
-      src: '/imgs/recuerdos/paseos/img_25.jpg'
-    },
-    {
-      alt: 'img-26',
-      src: '/imgs/recuerdos/paseos/img_26.jpg'
-    },
-    {
-      alt: 'img-27',
-      src: '/imgs/recuerdos/paseos/img_27.jpg'
-    },
-    {
-      alt: 'img-28',
-      src: '/imgs/recuerdos/paseos/img_28.jpg'
-    },
-    {
-      alt: 'img-29',
-      src: '/imgs/recuerdos/paseos/img_29.jpg'
-    },
-    {
-      alt: 'img-30',
-      src: '/imgs/recuerdos/paseos/img_30.jpg'
-    },
-    {
-      alt: 'img-31',
-      src: '/imgs/recuerdos/paseos/img_31.jpg'
-    },
-    {
-      alt: 'img-32',
-      src: '/imgs/recuerdos/paseos/img_32.jpg'
-    },
-    {
-      alt: 'img-33',
-      src: '/imgs/recuerdos/paseos/img_33.jpg'
-    },
-    {
-      alt: 'img-34',
-      src: '/imgs/recuerdos/paseos/img_34.jpg'
-    },
-    {
-      alt: 'img-35',
-      src: '/imgs/recuerdos/paseos/img_35.jpg'
-    },
-    {
-      alt: 'img-36',
-      src: '/imgs/recuerdos/paseos/img_36.jpg'
-    },
-    {
-      alt: 'img-37',
-      src: '/imgs/recuerdos/paseos/img_37.jpg'
-    },
-    {
-      alt: 'img-38',
-      src: '/imgs/recuerdos/paseos/img_38.jpg'
-    },
-    {
-      alt: 'img-39',
-      src: '/imgs/recuerdos/paseos/img_39.jpg'
-    }
   ]
+
+  
 
   return (
     <main>
-      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselOne imgs={imgs2} />
+      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'} pt={3}>
+        <CarouselThree imgs={imgs} title='Paquetes'/>
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -239,47 +138,91 @@ export default function Parties() {
           </Typography>
         </BoxStyled> */}
       </Box>
-      <TitleOne text='Paseos o Visitas Escolares' />
-      <BoxStyled maxWidth={'1200px'} marginX={'auto'} paddingY={4}>
-        <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
-          En AVENTURA EN TU ESCUELA entendemos la importancia de brindar a los estudiantes experiencias educativas y
-          divertidas. Es por eso que hemos diseñado un servicio de excursiones escolares, pensado para divertirse,
-          aprender y conocer lugares y regiones de México.
-          <br />
-          <br />
-          Con nuestras salidas educativas Podrán descubrir:
-          <ul>
+      <BoxStyled maxWidth={'1400px'} mx={'auto'}>
+        <BoxBackground />
+        <Grid
+          container
+          sx={{
+            position: 'relative',
+            zIndex: 1
+          }}
+        >
+          <Grid
+            item
+            md={3}
+            xs={12}
+            py={'60px'}
+            px={'30px'}
+            sx={{
+              '& img': {
+                width: '100%',
+                boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
+                borderRadius: '8px',
+                transform: 'rotate(-5deg)'
+              }
+            }}
+          >
+            <img src="/imgs/recuerdos/paseos/img_5.jpg" alt="img" />
+            <br />
+            <br />
+            <br />
+            <img src="/imgs/recuerdos/paseos/img_7.jpg" alt="img" />
+
+
+          </Grid>
+          <GridBottom item md={8} py={'60px'} xs={12} className='bottom'>
+            <Typography variant='h5'>Paseos o Visitas Escolares</Typography>
+            <Typography variant='body1' textAlign={'justify'} mt={2}>
+            En AVENTURA EN TU ESCUELA entendemos la importancia de brindar a los estudiantes experiencias educativas y divertidas. Es por eso que hemos diseñado un servicio de excursiones escolares, pensado para divertirse, aprender y conocer lugares y regiones de México.            <br />
+            <br />
+            Con nuestras salidas educativas Podrán descubrir:
+            <br />
+            <ul>
             <li>MUSEOS</li>
             <li>FABRICAS</li>
             <li>PARQUES</li>
             <li>ZONAS ARQUEOLOGICAS</li>
-          </ul>
-          <br />
-          <br />
-          Prismas Basálticos, disfrutar de la emoción sin límites en Six Flags México, sumergirse en la historia de
-          Guanajuato y explorar las enigmáticas Pirámides de Teotihuacán. Nuestro equipo especializado se encarga de
-          todos los detalles logísticos y de seguridad, para que los alumnos puedan disfrutar al máximo de estas
-          aventuras inolvidables. ¡Únete a un viaje de aprendizaje y diversión,con memorias perdurables en México!
-          <br />
-          <br />
-          TE INCLUIMOS:
-          <br />
-          <br />
-          <ul>
-            <li>Transporte en autobús de turismo</li>
-            <li>Alimentos (Opcional)</li>
-            <li>Entradas a los lugares de visita</li>
-            <li>Recorridos guiados</li>
-            <li>Información cultural detallada</li>
-            <li>1 explorador por cada 15 alumnos</li>
-            <li>Botiquin de primeros auxilios</li>
-          </ul>
-        </Typography>
+            </ul>
+            <br />
+            
+            Prismas Basálticos, disfrutar de la emoción sin límites en Six Flags México, sumergirse en la historia de Guanajuato y explorar las enigmáticas Pirámides de Teotihuacán. Nuestro equipo especializado se encarga de todos los detalles logísticos y de seguridad, para que los alumnos puedan disfrutar al máximo de estas aventuras inolvidables. ¡Únete a un viaje de aprendizaje y diversión,con memorias perdurables en México!
+            <br />
+            <br />
+            TE INCLUIMOS:
+            <br />
+            <br />
+            <ul>
+              <li>Transporte en autobús de turismo</li>
+              <li>Alimentos (Opcional)</li>
+              <li>Entradas a los lugares de visita</li>
+              <li>Recorridos Guiados</li>
+              <li>Información cultural detallada</li>
+              <li>1 explorador por cada 15 alumnos</li>
+              <li>Botiquin de primeros auxilios</li>
+            </ul>
+
+            </Typography>
+            {/* <Box mt={3} textAlign={'center'}>
+              <Button
+                variant='contained'
+                sx={{
+                  background: '#9943A1',
+                  textTransform: 'none',
+                  color: 'white'
+                }}
+              >
+                <Typography variant='h5' color={'inherit'} px={3}>
+                  Ver más...
+                </Typography>
+              </Button>
+            </Box> */}
+          </GridBottom>
+        </Grid>
       </BoxStyled>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <TitleOne text='Paquetes' />
+        {/* <TitleOne text='Paquetes' /> */}
         <br />
-        <CarouselOne imgs={imgs} />
+        <CarouselFour imgs={imgs2} title='Recuerdos'/>
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -287,10 +230,11 @@ export default function Parties() {
           </Typography>
         </BoxStyled> */}
       </Box>
-      <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
+      {/* <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
         <MemoriesOne title='Recuerdos' imgs={imgs3} />
-      </BoxStyled>
+      </BoxStyled> */}
       <ServicesOne />
+      <br /><br />
     </main>
   )
 }

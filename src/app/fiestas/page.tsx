@@ -26,6 +26,11 @@ const BoxBackground = styled(Box)<BoxProps>(({ theme }) => ({
   }
 }))
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> andyDev-branch
 const GridBottom = styled(Grid)<GridProps>(({ theme }) => ({
   '&.bottom': {
     [theme.breakpoints.down('md')]: {
@@ -127,6 +132,13 @@ export default function Parties() {
       alt: 'img-7',
       src: '/imgs/recuerdos/fiestas/img_7.jpg'
     },
+<<<<<<< HEAD
+=======
+  ]
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const imgs3: Img[] = [
+>>>>>>> andyDev-branch
     {
       alt: 'img-8',
       src: '/imgs/recuerdos/fiestas/img_8.jpg'
