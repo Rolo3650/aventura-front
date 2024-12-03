@@ -62,7 +62,7 @@ const VideoOne = ({ video }: { video: string }) => {
             }
           }}
         >
-          <video src={video} />
+          <video src={video} autoPlay={true} controls={true}/>
         </Grid>
         <GridBottom item md={5} py={'60px'} xs={12} className='bottom'>
           <Typography variant='h5'>Sobre nosotros</Typography>

@@ -1,5 +1,5 @@
 'use client'
-import { CarouselOne, MemoriesOne, ServicesOne, TitleOne } from '@/components'
+import { CarouselFour, CarouselThree, MemoriesOne, ServicesOne, TitleOne } from '@/components'
 import { Img } from '@/core'
 import { Box, Typography, BoxProps, styled } from '@mui/material'
 
@@ -103,7 +103,7 @@ export default function Parties() {
   return (
     <main>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselOne imgs={imgs2} />
+        <CarouselThree imgs={imgs2} title='Paquetes'/>
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -143,7 +143,7 @@ export default function Parties() {
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
         <TitleOne text='Paquetes' />
         <br />
-        <CarouselOne imgs={imgs} />
+        <CarouselFour imgs={imgs} />
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -155,6 +155,7 @@ export default function Parties() {
         <MemoriesOne title='Recuerdos' imgs={imgs2} />
       </BoxStyled>
       <ServicesOne />
+      <br />
     </main>
   )
 }

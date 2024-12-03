@@ -1,16 +1,40 @@
 'use client'
-import { CarouselOne, MemoriesOne, ServicesOne, TitleOne } from '@/components'
+import { CarouselFour, CarouselThree,  ServicesOne, } from '@/components'
 import { Img } from '@/core'
-import { Box, Typography, BoxProps, styled } from '@mui/material'
+import { Box, Typography, BoxProps, styled, Grid,  GridProps } from '@mui/material'
 
-const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
+const BoxStyled = styled(Box)<BoxProps>(({}) => ({
+  padding: '0 30px',
+  position: 'relative'
+}))
+
+const BoxBackground = styled(Box)<BoxProps>(({ theme }) => ({
+  borderRadius: '4px',
+  bottom: 0,
+  right: '30px',
+  width: '80%',
+  height: '100%',
+  backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+  backgroundSize: 'contain',
+  backgroundPosition: 'center',
+  boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
   [theme.breakpoints.up('md')]: {
-    paddingLeft: '60px',
-    paddingRight: '60px'
+    position: 'absolute'
   },
   [theme.breakpoints.down('md')]: {
-    paddingLeft: '30px',
-    paddingRight: '30px'
+    display: 'none'
+  }
+}))
+
+const GridBottom = styled(Grid)<GridProps>(({ theme }) => ({
+  '&.bottom': {
+    [theme.breakpoints.down('md')]: {
+      padding: '50px 30px',
+      backgroundImage: 'url(/imgs/backgrounds/table_2.jpg)',
+      backgroundSize: 'contain',
+      backgroundPosition: 'center',
+      boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)'
+    }
   }
 }))
 
@@ -136,8 +160,8 @@ export default function Parties() {
 
   return (
     <main>
-      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselOne imgs={imgs2} />
+      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'} pt={3}>
+        <CarouselThree imgs={imgs} title='Paquetes'/>
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -145,32 +169,63 @@ export default function Parties() {
           </Typography>
         </BoxStyled> */}
       </Box>
-      <TitleOne text='Eventos escolares' />
-      <BoxStyled maxWidth={'1200px'} marginX={'auto'} paddingY={4}>
-        <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
-          ¿Estás listo para llevar la diversión al siguiente nivel en tu escuela? En Aventura en tu Escuela, ofrecemos
-          emocionantes eventos temáticos que transformarán tu escuela en un mundo de aventuras y diversión.
-          {/* <br />
-                    <br />
-                    Nuestras eventos temáticos están diseñadas para brindar una experiencia única y emocionante para los estudiantes, llenando el ambiente escolar con alegría, creatividad y emoción. Desde fiestas de disfraces hasta eventos inspirados en tus películas o libros favoritos, ofrecemos una amplia variedad de temas para que elijas el que mejor se adapte a los intereses de tu escuela.
-                    <br />
-                    <br />
-                    Cada evento temático incluye una increíble decoración, actividades divertidas y emocionantes juegos diseñados para involucrar a todos los estudiantes y fomentar el trabajo en equipo y la creatividad. Nuestro dedicado equipo de profesionales se encarga de cada detalle, desde la planificación hasta la ejecución, garantizando que tu fiesta sea un éxito rotundo. */}
-          <br />
-          <br />
-          Con Aventura en tu Escuela, puedes estar seguro de que tu evento escolar será todo un éxito. ¡Déjanos llevar
-          la emoción y la aventura a tu escuela y crea recuerdos inolvidables para tus estudiantes!
-          <br />
-          <br />
-          Contamos con eventos para el Día del Niño, Día del Estudiante, San Valentín, Mañanita Mexicana, Posadas, Halloween, Día del Padre, Día de la Madre y/o eventos de integración.
-          <br />
-          <br />
-        </Typography>
+      <BoxStyled maxWidth={'1400px'} mx={'auto'}>
+        <BoxBackground />
+        <Grid
+          container
+          sx={{
+            position: 'relative',
+            zIndex: 1
+          }}
+        >
+          <Grid
+            item
+            md={3}
+            xs={12}
+            py={'60px'}
+            px={'30px'}
+            sx={{
+              '& img': {
+                width: '100%',
+                boxShadow: '4px 4px 8px 0 rgba(0,0,0,0.25)',
+                borderRadius: '8px',
+                transform: 'rotate(-5deg)'
+              }
+            }}
+          >
+            <img src="/imgs/recuerdos/campamentos_aventura/img_13.jpg" alt="img" />
+          </Grid>
+          <GridBottom item md={8} py={'60px'} xs={12} className='bottom'>
+            <Typography variant='h5'>Eventos escolares</Typography>
+            <Typography variant='body1' textAlign={'justify'} mt={2}>
+            ¿Estás listo para llevar la diversión al siguiente nivel en tu escuela? En Aventura en tu Escuela, ofrecemos emocionantes eventos temáticos que transformarán tu escuela en un mundo de aventuras y diversión. 🥳
+            <br />
+            <br />
+            Con Aventura en tu Escuela, puedes estar seguro de que tu evento escolar será todo un éxito. ¡Déjanos llevar la emoción y la aventura a tu escuela y crea recuerdos inolvidables para tus estudiantes!            <br />
+            <br />
+            Contamos con eventos para el Día del Niño, Día del Estudiante, San Valentín, Mañanita Mexicana, Posadas, Halloween, Día del Padre, Día de la Madre y/o eventos de integración.
+            </Typography>
+            {/* <Box mt={3} textAlign={'center'}>
+              <Button
+                variant='contained'
+                sx={{
+                  background: '#9943A1',
+                  textTransform: 'none',
+                  color: 'white'
+                }}
+              >
+                <Typography variant='h5' color={'inherit'} px={3}>
+                  Ver más...
+                </Typography>
+              </Button>
+            </Box> */}
+          </GridBottom>
+        </Grid>
       </BoxStyled>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <TitleOne text='Paquetes' />
+        {/* <TitleOne text='Paquetes' /> */}
         <br />
-        <CarouselOne imgs={imgs} />
+        <CarouselFour imgs={imgs2} title='Recuerdos'/>
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -178,10 +233,11 @@ export default function Parties() {
           </Typography>
         </BoxStyled> */}
       </Box>
-      <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
-        <MemoriesOne title='Recuerdos' imgs={imgs2} />
-      </BoxStyled>
+      {/* <BoxStyled maxWidth={'1200px'} marginX={'auto'}>
+        <MemoriesOne title='Recuerdos' imgs={imgs3} />
+      </BoxStyled> */}
       <ServicesOne />
+      <br /><br />
     </main>
   )
 }

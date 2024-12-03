@@ -51,7 +51,8 @@ export default function RootLayout({
               alignItems: 'center',
               borderRadius: '50%',
               cursor: 'pointer',
-              transition: 'transform 0.3s ease'
+              transition: 'transform 0.3s ease',
+              zIndex: 1000
             }
           }}
         >
