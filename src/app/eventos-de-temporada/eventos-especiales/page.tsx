@@ -1,5 +1,6 @@
 'use client'
-import { ServicesOne } from '@/components'
+import { CarouselThree, ServicesOne } from '@/components'
+import { Img } from '@/core'
 import { Box, Typography, BoxProps, styled, Grid, GridProps } from '@mui/material'
 
 const BoxStyled = styled(Box)<BoxProps>(({}) => ({
@@ -37,93 +38,36 @@ const GridBottom = styled(Grid)<GridProps>(({ theme }) => ({
 }))
 
 export default function Parties() {
-  // const imgs: Img[] = [
-  //   {
-  //     alt: 'img-1',
-  //     src: '/imgs/banners/fiestas/img_1.jpg'
-  //   },
-  //   {
-  //     alt: 'img-2',
-  //     src: '/imgs/banners/fiestas/img_2.jpeg'
-  //   },
-  //   {
-  //     alt: 'img-3',
-  //     src: '/imgs/banners/fiestas/img_3.jpeg'
-  //   },
-  //   {
-  //     alt: 'img-4',
-  //     src: '/imgs/banners/fiestas/img_4.jpg'
-  //   },
-  //   {
-  //     alt: 'img-5',
-  //     src: '/imgs/banners/fiestas/img_5.jpg'
-  //   },
-  //   {
-  //     alt: 'img-6',
-  //     src: '/imgs/banners/fiestas/img_6.jpg'
-  //   },
-  //   {
-  //     alt: 'img-7',
-  //     src: '/imgs/banners/fiestas/img_7.jpg'
-  //   },
-  //   {
-  //     alt: 'img-8',
-  //     src: '/imgs/banners/fiestas/img_8.jpg'
-  //   },
-  //   {
-  //     alt: 'img-9',
-  //     src: '/imgs/banners/fiestas/img_9.jpg'
-  //   },
-  //   {
-  //     alt: 'img-10',
-  //     src: '/imgs/banners/fiestas/img_10.jpg'
-  //   },
-  //   {
-  //     alt: 'img-11',
-  //     src: '/imgs/banners/fiestas/img_11.png'
-  //   }
-  // ]
+  const imgs: Img[] = [
+    {
+      alt: 'img-1',
+      src: '/imgs/navidad/img_1.jpg'
+    },
+    {
+      alt: 'img-2',
+      src: '/imgs/navidad/img_2.jpg'
+    }
+  ]
 
-  // const imgs2: Img[] = [
-  //   {
-  //     alt: 'img-1',
-  //     src: '/imgs/recuerdos/curso/img_1.jpg'
-  //   },
-  //   {
-  //     alt: 'img-2',
-  //     src: '/imgs/recuerdos/curso/img_2.jpg'
-  //   },
-  //   {
-  //     alt: 'img-3',
-  //     src: '/imgs/recuerdos/curso/img_3.jpg'
-  //   },
-  //   {
-  //     alt: 'img-4',
-  //     src: '/imgs/recuerdos/curso/img_4.jpg'
-  //   },
-  //   {
-  //     alt: 'img-5',
-  //     src: '/imgs/recuerdos/curso/img_5.jpg'
-  //   },
-  //   {
-  //     alt: 'img-6',
-  //     src: '/imgs/recuerdos/curso/img_6.jpg'
-  //   },
-  //   {
-  //     alt: 'img-7',
-  //     src: '/imgs/recuerdos/curso/img_7.jpg'
-  //   }
-  // ]
+  const imgs2: Img[] = [
+    {
+      alt: 'img-1',
+      src: '/imgs/halloween/img_1.jpg'
+    },
+    {
+      alt: 'img-2',
+      src: '/imgs/halloween/img_2.jpg'
+    }
+  ]
 
   return (
     <main>
-      {/* <Box maxWidth={'1200px'} display={'flex'} justifyContent={'center'} m={'auto'} mb={3}>
-        <img src='/imgs/banners/curso/img_1.jpg' alt='img-curso' className='w-100' />
+      <Box py={2} maxWidth={'1200px'} mx={'auto'}>
+        <CarouselThree imgs={imgs} title='Navidad' />
       </Box>
-      <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselOne imgs={imgs2} />
-        <br />
-      </Box> */}
+      <Box py={2} maxWidth={'1200px'} mx={'auto'}>
+        <CarouselThree imgs={imgs2} title='Halloween' />
+      </Box>
       <BoxStyled maxWidth={'1400px'} mx={'auto'} my={3}>
         <BoxBackground />
         <Grid

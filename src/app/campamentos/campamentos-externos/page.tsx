@@ -77,6 +77,14 @@ export default function Parties() {
     {
       alt: 'img-6',
       src: '/imgs/banners/campamentos/img_6.jpg'
+    },
+    {
+      alt: 'img-7',
+      src: '/imgs/banners/campamentos/img_7.jpg'
+    },
+    {
+      alt: 'img-8',
+      src: '/imgs/banners/campamentos/img_8.jpg'
     }
   ]
 
