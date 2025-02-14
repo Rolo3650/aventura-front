@@ -15,6 +15,22 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
 export default function Home() {
   const imgs: Img[] = [
     {
+      alt: 'img-20',
+      src: '/imgs/banners/fiestas/img_14.jpg'
+    },
+    {
+      alt: 'img-21',
+      src: '/imgs/banners/fiestas/img_15.jpg'
+    },
+    {
+      alt: 'img-22',
+      src: '/imgs/banners/fiestas/img_16.jpg'
+    },
+    {
+      alt: 'img-22',
+      src: '/imgs/banners/fiestas_tematicas/img_12.jpg'
+    },
+    {
       alt: 'img-1',
       src: '/imgs/banners/campamentos/img_1.jpg'
     },
@@ -100,7 +116,7 @@ export default function Home() {
     <main>
       <BannerOne img='/svgs/backgrounds/banner-1.svg' />
       <BoxStyled maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
-        <CarouselTwo imgs={imgs} title='Nuestros cursos' />
+        <CarouselTwo imgs={imgs} title='Novedades' />
       </BoxStyled>
       <VideoOne video='/imgs/banners/campamentos/Video Camp Villa victoria.mp4' />
       <br />

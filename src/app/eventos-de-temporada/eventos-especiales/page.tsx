@@ -60,8 +60,30 @@ export default function Parties() {
     }
   ]
 
+  const imgs3: Img[] = [
+    {
+      alt: 'img-20',
+      src: '/imgs/banners/fiestas/img_14.jpg'
+    },
+    {
+      alt: 'img-21',
+      src: '/imgs/banners/fiestas/img_15.jpg'
+    },
+    {
+      alt: 'img-22',
+      src: '/imgs/banners/fiestas/img_16.jpg'
+    },
+    {
+      alt: 'img-22',
+      src: '/imgs/banners/fiestas_tematicas/img_12.jpg'
+    },
+  ]
+
   return (
     <main>
+      <Box py={2} maxWidth={'1200px'} mx={'auto'}>
+        <CarouselThree imgs={imgs3} title='Febrero' />
+      </Box>
       <Box py={2} maxWidth={'1200px'} mx={'auto'}>
         <CarouselThree imgs={imgs} title='Navidad' />
       </Box>

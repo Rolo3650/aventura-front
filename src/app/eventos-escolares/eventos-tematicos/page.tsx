@@ -1,7 +1,7 @@
 'use client'
-import { CarouselFour, CarouselThree,  ServicesOne, } from '@/components'
+import { CarouselFour, CarouselThree, ServicesOne } from '@/components'
 import { Img } from '@/core'
-import { Box, Typography, BoxProps, styled, Grid,  GridProps } from '@mui/material'
+import { Box, Typography, BoxProps, styled, Grid, GridProps } from '@mui/material'
 
 const BoxStyled = styled(Box)<BoxProps>(({}) => ({
   padding: '0 30px',
@@ -41,57 +41,53 @@ const GridBottom = styled(Grid)<GridProps>(({ theme }) => ({
 export default function Parties() {
   const imgs: Img[] = [
     {
-      alt: 'img-1',
-      src: '/imgs/banners/fiestas/img_1.jpg'
+      alt: 'img-12',
+      src: '/imgs/banners/fiestas_tematicas/img_12.jpg'
     },
-    
+    {
+      alt: 'img-13',
+      src: '/imgs/banners/fiestas_tematicas/img_13.jpg'
+    },
+    {
+      alt: 'img-1',
+      src: '/imgs/banners/fiestas_tematicas/img_1.jpg'
+    },
+    {
+      alt: 'img-2',
+      src: '/imgs/banners/fiestas_tematicas/img_2.jpeg'
+    },
     {
       alt: 'img-3',
-      src: '/imgs/banners/fiestas/img_3.jpeg'
+      src: '/imgs/banners/fiestas_tematicas/img_3.jpg'
     },
     {
       alt: 'img-4',
-      src: '/imgs/banners/fiestas/img_4.jpg'
+      src: '/imgs/banners/fiestas_tematicas/img_4.jpg'
     },
     {
       alt: 'img-5',
-      src: '/imgs/banners/fiestas/img_5.jpg'
+      src: '/imgs/banners/fiestas_tematicas/img_5.jpg'
     },
     {
       alt: 'img-6',
-      src: '/imgs/banners/fiestas/img_6.jpg'
+      src: '/imgs/banners/fiestas_tematicas/img_6.jpg'
     },
     {
       alt: 'img-7',
-      src: '/imgs/banners/fiestas/img_7.jpg'
+      src: '/imgs/banners/fiestas_tematicas/img_7.jpg'
     },
     {
       alt: 'img-8',
-      src: '/imgs/banners/fiestas/img_8.jpg'
+      src: '/imgs/banners/fiestas_tematicas/img_8.jpeg'
     },
     {
       alt: 'img-9',
-      src: '/imgs/banners/fiestas/img_9.jpg'
+      src: '/imgs/banners/fiestas_tematicas/img_9.jpeg'
     },
-    
-    // {
-    //   alt: 'img-10',
-    //   src: '/imgs/banners/fiestas/img_10.jpg'
-    // },
+
     {
-      alt: 'img-11',
-      src: '/imgs/banners/fiestas/img_11.png'
-    },
-    {
-      alt: 'img-11',
-      src: '/imgs/banners/fiestas/img_11.jpg'
-    },
-    {
-      alt: 'img-12',
-      src: '/imgs/banners/fiestas/img_12.jpg'
-    },{
-      alt: 'img-13',
-      src: '/imgs/banners/fiestas/img_13.jpg'
+      alt: 'img-10',
+      src: '/imgs/banners/fiestas_tematicas/img_10.jpeg'
     }
   ]
 
@@ -167,13 +163,13 @@ export default function Parties() {
     {
       alt: 'img-18',
       src: '/imgs/recuerdos/campamentos_aventura/img_18.jpg'
-    },
+    }
   ]
 
   return (
     <main>
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'} pt={3}>
-        <CarouselThree imgs={imgs} title='Paquetes'/>
+        <CarouselThree imgs={imgs} title='Paquetes' />
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -205,17 +201,21 @@ export default function Parties() {
               }
             }}
           >
-            <img src="/imgs/recuerdos/campamentos_aventura/img_13.jpg" alt="img" />
+            <img src='/imgs/recuerdos/campamentos_aventura/img_13.jpg' alt='img' />
           </Grid>
           <GridBottom item md={8} py={'60px'} xs={12} className='bottom'>
             <Typography variant='h5'>Eventos escolares</Typography>
             <Typography variant='body1' textAlign={'justify'} mt={2}>
-            ¿Estás listo para llevar la diversión al siguiente nivel en tu escuela? En Aventura en tu Escuela, ofrecemos emocionantes eventos temáticos que transformarán tu escuela en un mundo de aventuras y diversión. 🥳
-            <br />
-            <br />
-            Con Aventura en tu Escuela, puedes estar seguro de que tu evento escolar será todo un éxito. ¡Déjanos llevar la emoción y la aventura a tu escuela y crea recuerdos inolvidables para tus estudiantes!            <br />
-            <br />
-            Contamos con eventos para el Día del Niño, Día del Estudiante, San Valentín, Mañanita Mexicana, Posadas, Halloween, Día del Padre, Día de la Madre y/o eventos de integración.
+              ¿Estás listo para llevar la diversión al siguiente nivel en tu escuela? En Aventura en tu Escuela,
+              ofrecemos emocionantes eventos temáticos que transformarán tu escuela en un mundo de aventuras y
+              diversión. 🥳
+              <br />
+              <br />
+              Con Aventura en tu Escuela, puedes estar seguro de que tu evento escolar será todo un éxito. ¡Déjanos
+              llevar la emoción y la aventura a tu escuela y crea recuerdos inolvidables para tus estudiantes! <br />
+              <br />
+              Contamos con eventos para el Día del Niño, Día del Estudiante, San Valentín, Mañanita Mexicana, Posadas,
+              Halloween, Día del Padre, Día de la Madre y/o eventos de integración.
             </Typography>
             {/* <Box mt={3} textAlign={'center'}>
               <Button
@@ -237,7 +237,7 @@ export default function Parties() {
       <Box maxWidth={'1200px'} width={'100%'} marginX={'auto'}>
         {/* <TitleOne text='Paquetes' /> */}
         <br />
-        <CarouselFour imgs={imgs2} title='Recuerdos'/>
+        <CarouselFour imgs={imgs2} title='Recuerdos' />
         <br />
         {/* <BoxStyled paddingLeft={'60px'}>
           <Typography variant='h2' fontWeight={600}>
@@ -249,7 +249,8 @@ export default function Parties() {
         <MemoriesOne title='Recuerdos' imgs={imgs3} />
       </BoxStyled> */}
       <ServicesOne />
-      <br /><br />
+      <br />
+      <br />
     </main>
   )
 }

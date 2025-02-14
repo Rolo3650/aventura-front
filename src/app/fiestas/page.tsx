@@ -41,6 +41,18 @@ const GridBottom = styled(Grid)<GridProps>(({ theme }) => ({
 export default function Parties() {
   const imgs: Img[] = [
     {
+      alt: 'img-14',
+      src: '/imgs/banners/fiestas/img_14.jpg'
+    },
+    {
+      alt: 'img-15',
+      src: '/imgs/banners/fiestas/img_15.jpg'
+    },
+    {
+      alt: 'img-16',
+      src: '/imgs/banners/fiestas/img_16.jpg'
+    },
+    {
       alt: 'img-1',
       src: '/imgs/banners/fiestas/img_1.jpg'
     },

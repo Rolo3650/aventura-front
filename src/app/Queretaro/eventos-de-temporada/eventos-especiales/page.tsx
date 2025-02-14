@@ -60,8 +60,30 @@ export default function Parties() {
     }
   ]
 
+  const imgs3: Img[] = [
+    {
+      alt: 'img-16',
+      src: '/imgs/banners-queretaro/fiestas/img_16.jpg'
+    },
+    {
+      alt: 'img-17',
+      src: '/imgs/banners-queretaro/fiestas/img_17.jpg'
+    },
+    {
+      alt: 'img-18',
+      src: '/imgs/banners-queretaro/fiestas/img_18.jpg'
+    },
+    {
+      alt: 'img-16',
+      src: '/imgs/banners-queretaro/fiestas_tematicas/img_16.jpg'
+    },
+  ]
+
   return (
     <main>
+      <Box py={2} maxWidth={'1200px'} mx={'auto'}>
+        <CarouselThree imgs={imgs3} title='Febrero' />
+      </Box>
       <Box py={2} maxWidth={'1200px'} mx={'auto'}>
         <CarouselThree imgs={imgs} title='Navidad' />
       </Box>
