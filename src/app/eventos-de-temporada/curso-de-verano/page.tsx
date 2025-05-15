@@ -42,11 +42,11 @@ export default function Parties() {
   const imgs: Img[] = [
     {
       alt: 'img-2',
-      src: '/imgs/banners/curso/img_2.jpg'
+      src: '/imgs/banners/curso/img_4.jpg'
     },
     {
       alt: 'img-3',
-      src: '/imgs/banners/curso/img_3.jpg'
+      src: '/imgs/banners/curso/img_5.jpg'
     }
   ]
 
@@ -196,7 +196,7 @@ export default function Parties() {
             <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
               <br />
               <br />
-              CURSO DE VERANO 2024 ¡VERANO DE AVENTURA! ⛱😎🌞
+              CURSO DE VERANO 2025 ¡VERANO DE AVENTURA! ⛱😎🌞
               <br />
               <br />
               Horario: Lunes a viernes de 8:00 a 14:00 ⏰ Edades de 3 a 13 años divididos en tres categorías 🐿
@@ -220,7 +220,7 @@ export default function Parties() {
                     }}
                     variant='contained'
                     onClick={() => {
-                      window.open('/docs/Info del curso.pdf', '_blank')
+                      window.open('/docs/INFORMACION VERANO DE AVENTURA CEL 2025.pdf', '_blank')
                     }}
                   >
                     <Typography fontWeight={'600'} color={'white'}>
@@ -237,7 +237,7 @@ export default function Parties() {
                     }}
                     variant='contained'
                     onClick={() => {
-                      window.open('/docs/camp de verano.pdf', '_blank')
+                      window.open('/docs/PLAN DE CAMPAMENTO VERANO CDI-TPOZ 2025.pdf', '_blank')
                     }}
                   >
                     <Typography fontWeight={'600'} color={'white'}>

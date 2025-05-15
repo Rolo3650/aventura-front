@@ -128,7 +128,7 @@ export default function Parties() {
             <Typography variant='body1' sx={{ textAlign: 'justify' }} fontWeight={'bold'}>
               <br />
               <br />
-              CURSO DE VERANO 2024 ¡VERANO DE AVENTURA! ⛱😎🌞
+              CURSO DE VERANO 2025 ¡VERANO DE AVENTURA! ⛱😎🌞
               <br />
               <br />
               Horario: Lunes a viernes de 8:00 a 14:00 ⏰ Edades de 3 a 13 años divididos en tres categorías 🐿
