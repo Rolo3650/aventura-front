@@ -63,10 +63,10 @@ const MenuThree = ({ nav, index }: { nav: NavigationItem; index: number }) => {
           <MenuItem
             key={item.route}
             onClick={() => {
-              if (nav.blank === 'blank') {
-                window.open(nav.route, '_blank')
+              if (item.blank === 'blank') {
+                window.open(item.route, '_blank')
               } else {
-                router.push(nav.route)
+                router.push(item.route)
               }
               setAnchorEl(null)
             }}
