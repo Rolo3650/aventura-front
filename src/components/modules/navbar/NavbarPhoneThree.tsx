@@ -47,7 +47,11 @@ const NavbarPhoneThree = () => {
               key={nav.route}
               breakpoint={nav.breackpoint}
               onClick={() => {
-                router.push(nav.route)
+                if (nav.blank === 'blank') {
+                  window.open(nav.route, '_blank')
+                } else {
+                  router.push(nav.route)
+                }
               }}
               startIcon={nav.icon && <Image src={nav.icon} alt='icon' className='logo' width={24} height={24} />}
             >

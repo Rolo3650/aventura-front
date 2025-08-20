@@ -23,7 +23,7 @@ const ButtonStyled = styled(Button)<ButtonStyled>(({ breakpoint, theme }) => ({
   borderRadius: '0'
 }))
 
-const MenuOne = ({ nav, index }: { nav: NavigationItem; index: number; }) => {
+const MenuOne = ({ nav, index }: { nav: NavigationItem; index: number }) => {
   const router = useRouter()
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
   const open = Boolean(anchorEl)
@@ -62,7 +62,11 @@ const MenuOne = ({ nav, index }: { nav: NavigationItem; index: number; }) => {
           <MenuItem
             key={item.route}
             onClick={() => {
-              router.push(item.route)
+              if (nav.blank === 'blank') {
+                window.open(nav.route, '_blank')
+              } else {
+                router.push(nav.route)
+              }
               setAnchorEl(null)
             }}
           >

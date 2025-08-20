@@ -6,6 +6,7 @@ interface NavigationItem {
   breackpoint: Breakpoint
   items?: NavigationItem[]
   icon?: string
+  blank?: "current" | "blank"
 }
 
 export type { NavigationItem }

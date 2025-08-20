@@ -5,7 +5,7 @@ const navigationConfig: NavigationItem[] = [
     label: 'Fiestas',
     breackpoint: 'md',
     route: '/fiestas',
-    icon: '/svgs/icons/gift-brown-1.svg',
+    icon: '/svgs/icons/gift-brown-1.svg'
   },
   {
     label: 'Eventos Escolares',
@@ -39,7 +39,7 @@ const navigationConfig: NavigationItem[] = [
       {
         label: 'Curso de Verano',
         breackpoint: 'md',
-        route: '/eventos-de-temporada/curso-de-verano',
+        route: '/eventos-de-temporada/curso-de-verano'
       },
       {
         label: 'Eventos especiales',
@@ -76,6 +76,12 @@ const navigationConfig: NavigationItem[] = [
     label: 'Staff',
     breackpoint: 'md',
     route: '/staff'
+  },
+  {
+    label: 'Panel',
+    breackpoint: 'md',
+    route: 'https://panel.aventuraentuescuela.com.mx',
+    blank: 'blank'
   }
 ]
 

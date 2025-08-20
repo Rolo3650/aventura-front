@@ -31,7 +31,11 @@ const NavbarDesktopThree = () => {
               key={nav.route}
               breakpoint={nav.breackpoint}
               onClick={() => {
-                router.push(nav.route)
+                if (nav.blank === 'blank') {
+                  window.open(nav.route, '_blank')
+                } else {
+                  router.push(nav.route)
+                }
               }}
             >
               <Typography

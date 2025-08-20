@@ -37,7 +37,11 @@ const NavbarDesktopOne = () => {
               sx={{ borderRight: index + 1 == navigationConfig.length ? '2px solid white' : '' }}
               breakpoint={nav.breackpoint}
               onClick={() => {
-                router.push(nav.route)
+                if (nav.blank === 'blank') {
+                  window.open(nav.route, '_blank')
+                } else {
+                  router.push(nav.route)
+                }
               }}
             >
               <Typography color={'inherit'} fontWeight={'600'}>
@@ -46,9 +50,7 @@ const NavbarDesktopOne = () => {
             </ButtonStyled>
           )
         } else {
-          return (
-            <MenuOne key={index} nav={nav} index={index} />
-          )
+          return <MenuOne key={index} nav={nav} index={index} />
         }
       })}
     </Box>
