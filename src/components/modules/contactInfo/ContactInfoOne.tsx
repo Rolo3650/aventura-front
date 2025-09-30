@@ -59,7 +59,7 @@ const ContactInfoOne = () => {
           message
         },
         {
-          baseURL: 'http://localhost:4000/api/v1/notification/'
+          baseURL: 'https://sicoevback-production.up.railway.app/api/v1/notification/'
         }
       )
     } catch (error) {}
