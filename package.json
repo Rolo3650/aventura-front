@@ -15,6 +15,7 @@
     "@mui/material": "^5.15.15",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",
+    "axios": "^1.12.2",
     "bootstrap": "^5.3.3",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -27,7 +28,8 @@
     "react-images-viewer": "^1.7.1",
     "react-photo-view": "^1.2.4",
     "react-swipeable-views": "^0.14.0",
-    "sass": "^1.74.1"
+    "sass": "^1.74.1",
+    "sweetalert2": "^11.23.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",

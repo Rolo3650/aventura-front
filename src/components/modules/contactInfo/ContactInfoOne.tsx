@@ -2,7 +2,9 @@
 import { Box, BoxProps, Button, Divider, Grid, GridProps, Link, styled, TextField, Typography } from '@mui/material'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios'
+import sweetAlert from 'sweetalert2'
 
 const GridContainer = styled(Grid)<GridProps>(({ theme }) => ({
   overflow: 'hidden',
@@ -41,6 +43,29 @@ const BoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
 
 const ContactInfoOne = () => {
   const pathname = usePathname()
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [message, setMessage] = useState('')
+
+  const onClick = async () => {
+    try {
+      const response = await axios.post(
+        '/contact',
+        {
+          name,
+          email,
+          phone,
+          message
+        },
+        {
+          baseURL: 'http://localhost:4000/api/v1/notification/'
+        }
+      )
+    } catch (error) {}
+
+    sweetAlert.fire('¡Mensaje enviado!', 'Nos pondremos en contacto contigo pronto.', 'success')
+  }
 
   return (
     <BoxStyled>
@@ -94,11 +119,11 @@ const ContactInfoOne = () => {
               <Typography variant='body1' ml={2}>
                 <Link
                   target='_blank'
-                  href='https://www.google.com/maps/place/C.+Pierre+Lyonnet+70a,+Jardines+de+Satelite,+53129+Naucalpan+de+Ju%C3%A1rez,+M%C3%A9x./@19.511233,-99.25815,15z/data=!4m6!3m5!1s0x85d2034842328d83:0x40cfe62a02fffa74!8m2!3d19.5112333!4d-99.2581504!16s%2Fg%2F11c1x_yj9x?hl=es-419&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D'
+                  href='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1880.5191862663235!2d-99.26801000562384!3d19.496984827726003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d203681fa7cfbf%3A0x85d74fdb950d05ca!2sHelechos%2036%2C%20Cumbres%20de%20San%20Mateo%2C%2053210%20Naucalpan%20de%20Ju%C3%A1rez%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1759201185213!5m2!1ses-419!2smx'
                   underline='hover'
                   color={'inherit'}
                 >
-                  C. Pierre Lyonnet 70a, Jardines de Satelite, C.P. 53129, Naucalpan de Juárez, Estado de México, Méx.
+                  Helechos 36, Cumbres de San Mateo, 53210 Naucalpan de Juárez, Méx.
                 </Link>
               </Typography>
             </Box>
@@ -133,7 +158,7 @@ const ContactInfoOne = () => {
             </Box>
             <Box mt={3}>
               <iframe
-                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.70710413925!2d-99.26302130767162!3d19.511233234819205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2034842328d83%3A0x40cfe62a02fffa74!2sC.%20Pierre%20Lyonnet%2070a%2C%20Jardines%20de%20Satelite%2C%2053129%20Naucalpan%20de%20Ju%C3%A1rez%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1728239530001!5m2!1ses-419!2smx'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1880.5191862663235!2d-99.26801000562384!3d19.496984827726003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d203681fa7cfbf%3A0x85d74fdb950d05ca!2sHelechos%2036%2C%20Cumbres%20de%20San%20Mateo%2C%2053210%20Naucalpan%20de%20Ju%C3%A1rez%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1759201185213!5m2!1ses-419!2smx'
                 style={{ border: '0', width: '100%', height: '100%' }}
                 allowFullScreen
                 loading='lazy'
@@ -257,6 +282,8 @@ const ContactInfoOne = () => {
               fullWidth
               size='small'
               sx={{ '& .MuiInputBase-input': { backgroundColor: 'white', borderRadius: '5px' } }}
+              value={name}
+              onChange={e => setName(e.target.value)}
             />
           </Box>
           <Box mt={1}>
@@ -265,6 +292,8 @@ const ContactInfoOne = () => {
               fullWidth
               size='small'
               sx={{ '& .MuiInputBase-input': { backgroundColor: 'white', borderRadius: '5px' } }}
+              value={email}
+              onChange={e => setEmail(e.target.value)}
             />
           </Box>
           <Box mt={1}>
@@ -273,6 +302,8 @@ const ContactInfoOne = () => {
               fullWidth
               size='small'
               sx={{ '& .MuiInputBase-input': { backgroundColor: 'white', borderRadius: '5px' } }}
+              value={phone}
+              onChange={e => setPhone(e.target.value)}
             />
           </Box>
           <Box mt={1}>
@@ -283,11 +314,13 @@ const ContactInfoOne = () => {
               fullWidth
               size='small'
               sx={{ backgroundColor: 'white', borderRadius: '5px' }}
+              value={message}
+              onChange={e => setMessage(e.target.value)}
             />
           </Box>
           <Box mt={2} textAlign={'end'}>
             <Button variant='contained' style={{ backgroundColor: '#9943A1', textTransform: 'none' }}>
-              <Typography px={2} variant='h5' color={'white'}>
+              <Typography px={2} variant='h5' color={'white'} onClick={onClick}>
                 Enviar
               </Typography>
             </Button>
