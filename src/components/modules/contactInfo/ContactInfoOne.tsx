@@ -50,7 +50,7 @@ const ContactInfoOne = () => {
 
   const onClick = async () => {
     try {
-      const response = await axios.post(
+      await axios.post(
         '/contact',
         {
           name,
